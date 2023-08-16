@@ -1,0 +1,56 @@
+/* footer.css */
+@import '../scss/_variables.scss';
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: $back-color;
+    color: rgb(184, 184, 184);
+
+    .f_logo{
+        height: 50px;
+        display: flex;
+        gap: 75%;
+        color: rgb(219, 219, 219);
+        a{
+            padding: 10px 0 0 20px;
+            font-size: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(219, 219, 219);
+            font-family: $logg-font;
+        }
+        div{
+            display: flex;
+            gap: 5px;
+        }
+        img{
+            margin-top: 15px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(30deg);
+        }
+        #tel{
+            margin-top: 10px;
+            text-align: right;
+            font-size: 25px;
+            font-family: $logg-font;
+        }
+    }
+    
+    .content{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 20px;
+        p{
+            line-height: 0.8;
+        }
+    }
+
+    #copyright{
+        font-size: 10px;
+        text-align: center;
+        padding-top: 20px;
+    }
+}

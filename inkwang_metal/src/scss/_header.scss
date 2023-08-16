@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
+@import "../scss/variables";
+
+header{
+    height: 200px;
+}
+
+.logo{
+    margin-left: 150px;
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    a {
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        font-family: $logg-font;
+    }
+}
+
+img{
+    margin-top: 10px;
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.list{
+    float: right;
+    display: flex;
+    gap: 80px;
+    color: black;
+    font-size: 15px;
+    margin-right: 120px;
+    margin-top: 10px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: $list-font;
+        font-weight: bolder;
+    }
+}
