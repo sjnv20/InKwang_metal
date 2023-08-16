@@ -8,11 +8,12 @@ const Header = () => {
         <img src={Logo} alt="logo"/>
         <a href='/'>인광금속</a>
       </div>
-      <div class="list">
+      <nav class="nav">
         <a href="/company">회사소개</a>
         <a href="/product">제품소개</a>
         <a href="/gallery">Gallery</a>
-      </div>
+        <div class="dot"></div>
+      </nav>
     </header>
   );
 };

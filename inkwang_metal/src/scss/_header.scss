@@ -1,46 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=East+Sea+Dokdo&family=Noto+Serif+KR:wght@600&display=swap');
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
 @import "../scss/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 header{
     height: 200px;
 }
 
 .logo{
-    margin-left: 150px;
-    margin-top: 30px;
     display: flex;
     gap: 15px;
+    height: 100px;
+
     a {
-        margin-top: 20px;
+        margin-top: 60px;
         font-size: 30px;
         font-weight: 600;
         cursor: pointer;
         text-decoration: none;
         color: black;
-        font-family: $logg-font;
+        font-family: $logo-font;
+    }
+
+    img{
+        margin-left: 150px;
+        margin-top: 50px;
+        width: 50px;
+        height: 60px;
+        cursor: pointer;
     }
 }
 
-img{
-    margin-top: 10px;
-    width: 50px;
-    height: 60px;
-    cursor: pointer;
-}
-
-.list{
-    float: right;
-    display: flex;
-    gap: 80px;
-    color: black;
-    font-size: 15px;
-    margin-right: 120px;
-    margin-top: 10px;
+.nav{
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
     a {
         text-decoration: none;
+        font-size: 1.2rem;
         color: black;
+        text-transform: uppercase;
         font-family: $list-font;
         font-weight: bolder;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        display: inline-block;
+        width: 150px;
     }
+
+    a:hover{
+        color: $back-color;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        background: $back-color;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+    a:nth-child(1):hover ~ .dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    a:nth-child(2):hover ~ .dot {
+        -webkit-transform: translateX(180px);
+        transform: translateX(180px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    a:nth-child(3):hover ~ .dot {
+        -webkit-transform: translateX(340px);
+        transform: translateX(340px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+
+
 }

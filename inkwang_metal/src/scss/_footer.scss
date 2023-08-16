@@ -6,20 +6,21 @@ footer{
     width: 100%;
     background-color: $back-color;
     color: rgb(184, 184, 184);
-
+    position: absolute;
+    bottom: 0;
     .f_logo{
         height: 50px;
         display: flex;
-        gap: 75%;
+        gap: 73%;
         color: rgb(219, 219, 219);
         a{
-            padding: 10px 0 0 20px;
+            padding: 10px 0 0 30px;
             font-size: 30px;
             font-weight: 600;
             cursor: pointer;
             text-decoration: none;
             color: rgb(219, 219, 219);
-            font-family: $logg-font;
+            font-family: $logo-font;
         }
         div{
             display: flex;
@@ -35,16 +36,16 @@ footer{
             margin-top: 10px;
             text-align: right;
             font-size: 25px;
-            font-family: $logg-font;
+            font-family: $logo-font;
         }
     }
     
     .content{
         text-align: center;
         font-size: 15px;
-        padding-top: 20px;
+        margin-top: 35px;
         p{
-            line-height: 0.8;
+            line-height: 1.8;
         }
     }
 
