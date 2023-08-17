@@ -3,12 +3,14 @@ import '../scss/_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_company.scss'
 import '../scss/_home.scss'
+import C_img from '../images/inkwang_img/inkwang_1.jpeg'
 
 const Company = () => {
     return (
         <div class="content">
             <div class="c_title_back">
-                <p class="c_title">About Us</p>
+                <div class="c_img"><img src={C_img} alt="c_img1"/></div>
+                <div class="c_text"><p class="c_title">About Us</p></div>
             </div>
             <div class="company">
                 <div id="con1">

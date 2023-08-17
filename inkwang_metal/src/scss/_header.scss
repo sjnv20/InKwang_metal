@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=East+Sea+Dokdo&family=Noto+Serif+KR:wght@600&display=swap');
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
 @import "../scss/variables";
+@import '../scss/mixins';
 
 * {
     margin: 0;
@@ -10,27 +11,49 @@
 }
 
 header{
-    height: 200px;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.navigation {
+    height: 130px;
+    transition: .3s ease;
+    z-index: 1;
+    background-color: rgba(255, 129, 129, 0);
+    &.nav-bg {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0.5px 4px rgba(191,191,191,48%);
+        margin-bottom:5px;
+        height: 100px;
+    }
+
 }
 
 .logo{
     display: flex;
     gap: 15px;
     height: 100px;
-
+    padding-top: 20px;
+    transition: .3s ease;
+    &.logo-pd{
+        padding-left: 10px;
+        a{
+            color: black;
+        }
+    }
     a {
-        margin-top: 60px;
+        margin-top:10px;
         font-size: 30px;
         font-weight: 600;
         cursor: pointer;
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
         font-family: $logo-font;
     }
 
     img{
         margin-left: 150px;
-        margin-top: 50px;
         width: 50px;
         height: 60px;
         cursor: pointer;
@@ -39,18 +62,26 @@ header{
 
 .nav{
     position: absolute;
-    top: 100px;
-    left: 80%;
+    top: 90px;
+    left: 70%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
+    text-align: center;
+    transition: .3s ease;
+    &.nav-pd{
+        padding-bottom: 60px;
+        a{
+            color: black;
+        }
+    }
     a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: black;
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
-        font-family: $list-font;
-        font-weight: bolder;
+        font-family: $list-font-bold;
+        font-weight: 900;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         display: inline-block;
@@ -74,29 +105,36 @@ header{
       }
 
     a:nth-child(1):hover ~ .dot {
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
+        -webkit-transform: translateX(70px);
+        transform: translateX(70px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
     a:nth-child(2):hover ~ .dot {
-        -webkit-transform: translateX(180px);
-        transform: translateX(180px);
+        -webkit-transform: translateX(220px);
+        transform: translateX(220px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
     a:nth-child(3):hover ~ .dot {
-        -webkit-transform: translateX(340px);
-        transform: translateX(340px);
+        -webkit-transform: translateX(380px);
+        transform: translateX(380px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
+    a:nth-child(4):hover ~ .dot {
+        -webkit-transform: translateX(520px);
+        transform: translateX(520px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
 
 
 }
