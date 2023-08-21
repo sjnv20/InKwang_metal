@@ -4,7 +4,7 @@ import '../scss/_footer.scss'
 import '../scss/_company.scss'
 import '../scss/_home.scss'
 import C_img from '../images/inkwang_img/inkwang_1.jpeg'
-import inKwang from '../images/inkwang_img/inkwang.png';
+import inKwang from '../images/inkwang_img/inkwangdoor.jpeg';
 
 const Company = () => {
     return (
