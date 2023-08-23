@@ -35,7 +35,7 @@ const Header = () => {
           <a href="/company">회사소개</a>
           <a href="/product">제품소개</a>
           <a href="/gallery">Gallery</a>
-          <div class="dot"></div>
+          <div className="dot"></div>
         </nav>
     </header>
   );

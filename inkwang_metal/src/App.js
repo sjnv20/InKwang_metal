@@ -5,6 +5,7 @@ import Home from "./routes/home";
 import Product from "./routes/product"
 import Gallery from "./routes/gallery";
 
+
 function App () {
     return(
       <Routes>

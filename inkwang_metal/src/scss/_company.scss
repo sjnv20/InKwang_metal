@@ -28,43 +28,46 @@
     }
 }
 
-
-.company{
-    height: 500px;
+.side_com{
     display: flex;
-    flex-direction: column;
-    margin-left: 13%;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    #con1{
+
+    .company{
+        height: 500px;
         display: flex;
-        gap: 10px;
-        width: 500px;
-        span{
-            font-size: 30px;
-            margin-top: 50px;
+        flex-direction: column;
+        margin-left: 13px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        width: 80%;
+        #con1{
+            display: flex;
+            gap: 10px;
+            span{
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            #tit{
+                font-size: 30px;
+                font-family: $logo-font;
+                font-weight: 900;
+                margin-top: 40px;
+            }
         }
-        #tit{
-            font-size: 30px;
-            font-family: $logo-font;
-            font-weight: 900;
-            margin-top: 40px;
+
+        #con2{
+            margin-top: 20px;
+            font-size: 16px;
+            width: 600px;
+            line-height: 2.5rem;
         }
     }
 
-    #con2{
-        margin-top: 20px;
-        font-size: 16px;
-        width: 650px;
-        line-height: 2.5rem;
-    }
-}
+    .con_img{
+        display: flex;
+        img{
+            width: 400px;
+            height: 300px;
+        }
 
-.con_img{
-    display: flex;
-    img{
-        width: 500px;
-        height: 300px;
     }
-
 }

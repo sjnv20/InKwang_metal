@@ -6,7 +6,7 @@ import '../scss/_home.scss'
 
 const Home = () => {
   return (
-    <div class="content">
+    <div className="content">
       홈 화면 입니다.
     </div>
   );
