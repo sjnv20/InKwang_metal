@@ -17,12 +17,22 @@ const CMap = () => {
     useEffect(() => {
         const container = document.getElementById('maps');
         const options = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3
+        center: new kakao.maps.LatLng(35.136779, 128.972295),
+        level: 2
         };
+
         const map = new kakao.maps.Map(container, options);
+
+        const markerPosition = new kakao.maps.LatLng(35.136779, 128.972295); 
+
+        const marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
         }, [])
 
+        
 
     const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
     const [ScrollActive, setScrollActive] = useState(false);
@@ -59,7 +69,7 @@ const CMap = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us</p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px"}}>- 오시는 길 -</p></p></div>
             </div>
             <div className='side_map'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
@@ -74,8 +84,32 @@ const CMap = () => {
                         );
                     })}
                 </div>
-                <div>
-                    <div id="maps" style={{ width: '500px', height: '500px'}}></div>
+                <div className='kmap'>
+                    <div id='maps' style={{ width: '800px', height: '400px', marginLeft: '100px', marginTop: '50px'}}></div>
+                    <div id='address'> 
+                        <table className='tab'>
+                            <tbody>
+                                <tr>
+                                    <th>주소</th>
+                                    <td id='t_bg'>본사</td> 
+                                    <td id='t_form'>(47029) 부산광역시 사상구 감전천로 33</td>
+                                </tr>
+                                <tr>
+                                    <th rowSpan={3}>전화<br/>&<br/>E-mail</th>
+                                    <td id='t_bg'>전화</td> 
+                                    <td id='t_form'>051 . 324 . 5051</td>
+                                </tr>
+                                <tr>
+                                    <td id='t_bg'>Fax</td>
+                                    <td id='t_form'>0101029393</td>	
+                                </tr>
+                                <tr>
+                                    <td id='t_bg'>E-mail</td>
+                                    <td id='t_form'>cc707200@hanmail.net</td>	
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

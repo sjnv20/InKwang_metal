@@ -46,7 +46,7 @@ const Company = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us</p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px"}}>- 인사말 -</p></p></div>
             </div>
             <div className='side_com'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
@@ -67,13 +67,14 @@ const Company = () => {
                     </div>
                     <div className='con_img'>
                         <div id="con2">
-                        안녕하십니까.<br/>
-                        인산염피막 전문업체 인광금속입니다.<br/>
-                        금속 표면처리후 결함이 발생되지 않게 작업하는것이 가장 중요한 노하우입니다.<br/>
-                        저희 인광금속의 기술력은 금속 표면처리 후 벗겨짐 현상이 발생되지 않으며,<br/>
-                        금액 납기 또한 신속하며 저렴한 가격으로 고객의 경재력을 확보해 드립니다.<br/>
-                        항상 고객의 만족을 위해 최선을 다하겠습니다. <br/>
-                        감사합니다.
+                        환영합니다.<br/>
+                        인산염피막, 알카리착색을 전문으로 하는 <b>인광금속</b> 입니다.<br/>
+                        인광금속은 10년이상  차곡차곡 쌓은 실력과 성실함으로 당사를 찾아 주시는 고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
+
+                        최신설비와 축적된 기술로 더욱 신속하고 품질이 우수한 제품을 생산하며<br/> 고객만족에 힘쓰겠습니다.<br/>
+
+                        인광금속을 찾아주시는 모든 분들의 사업 번창을 기원하며
+                        <br/>당사도 함께 성장하고자 합니다. <br/>감사합니다.
                         <p id='sign'><span>대표</span> 이순수 & 최지연</p>
                         </div>
                         <div>
