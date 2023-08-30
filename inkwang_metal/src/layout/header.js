@@ -31,27 +31,12 @@ const Header = () => {
           <a href='/'>인광금속</a>
         </div>
         <nav className={ScrollActive ? "nav nav-pd" : "nav"}>
-          <li>
-            <a href="/"><span>HOME</span></a>
-          </li>
-          <li>
-            <a href="/company"><span>회사소개</span></a>
-            <ul>
-              <li><a href='/company'><span>인사말</span></a></li>
-              <li><a href='/cmap'><span>오시는 길</span></a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="/product"><span>제품소개</span></a>
-            <ul></ul>
-          </li>
-          <li>
-            <a href="/gallery"><span>Gallery</span></a>
-            <ul></ul>
-          </li>
-            <div className="dot"></div>
+          <a href="/">HOME</a>
+          <a href="/company">회사소개</a>
+          <a href="/product">제품소개</a>
+          <a href="/gallery">Gallery</a>
+          <div className="dot"></div>
         </nav>
-
     </header>
   );
 };
