@@ -2,19 +2,19 @@
 @import '../scss/_variables.scss';
 
 footer{
-    height: 222px;
+    height: 220px;
     width: 100%;
     background-color: $back-color;
     color: rgb(184, 184, 184);
     position: absolute;
     bottom: 0;
     .f_logo{
-        height: 50px;
+        height: 40px;
         display: flex;
         gap: 73%;
         color: rgb(219, 219, 219);
         a{
-            padding: 10px 0 0 30px;
+            padding: 20px 0 0 30px;
             font-size: 30px;
             font-weight: 600;
             cursor: pointer;
@@ -33,7 +33,7 @@ footer{
             transform: rotate(30deg);
         }
         #tel{
-            margin-top: 10px;
+            margin-top: 15px;
             text-align: right;
             font-size: 25px;
             font-family: $logo-font;
@@ -43,7 +43,7 @@ footer{
     .content{
         text-align: center;
         font-size: 15px;
-        margin-top: 35px;
+        margin-top: 30px;
         p{
             line-height: 1.8;
         }
@@ -52,6 +52,5 @@ footer{
     #copyright{
         font-size: 10px;
         text-align: center;
-        padding-top: 20px;
     }
 }

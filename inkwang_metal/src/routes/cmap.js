@@ -17,13 +17,13 @@ const CMap = () => {
     useEffect(() => {
         const container = document.getElementById('maps');
         const options = {
-        center: new kakao.maps.LatLng(35.136779, 128.972295),
+        center: new kakao.maps.LatLng(35.178773, 128.9797885),
         level: 2
         };
 
         const map = new kakao.maps.Map(container, options);
 
-        const markerPosition = new kakao.maps.LatLng(35.136779, 128.972295); 
+        const markerPosition = new kakao.maps.LatLng(35.178773, 128.979788); 
 
         const marker = new kakao.maps.Marker({
             position: markerPosition
@@ -92,7 +92,7 @@ const CMap = () => {
                                 <tr>
                                     <th>주소</th>
                                     <td id='t_bg'>본사</td> 
-                                    <td id='t_form'>(47029) 부산광역시 사상구 감전천로 33</td>
+                                    <td id='t_form'>(46910) 부산광역시 사상구 낙동대로1338번길 68</td>
                                 </tr>
                                 <tr>
                                     <th rowSpan={3}>전화<br/>&<br/>E-mail</th>
