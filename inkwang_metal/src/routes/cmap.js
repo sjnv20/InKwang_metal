@@ -101,7 +101,7 @@ const CMap = () => {
                                 </tr>
                                 <tr>
                                     <td id='t_bg'>Fax</td>
-                                    <td id='t_form'>0101029393</td>	
+                                    <td id='t_form'>324 . 5053</td>	
                                 </tr>
                                 <tr>
                                     <td id='t_bg'>E-mail</td>
