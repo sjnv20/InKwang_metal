@@ -28,9 +28,11 @@ const Home = () => {
         }}
       >
         <SwiperSlide>
-          <img src={h_img1} alt="h_img1"/>
-          <div className='img_text'>
-            <h1>인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></h1>
+          <div className='swiper_img1'>
+            <img className='img1' src={h_img1} alt="h_img1"/>
+            <div className='img_text'>
+              <h1>인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></h1>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
