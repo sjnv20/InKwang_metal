@@ -46,7 +46,7 @@ const Company = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px"}}>- 인사말 -</p></p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px", fontWeight:'400'}}>- 인사말 -</p></p></div>
             </div>
             <div className='side_com'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
@@ -69,7 +69,7 @@ const Company = () => {
                         <div id="con2">
                         환영합니다.<br/>
                         인산염피막, 알카리착색을 전문으로 하는 <b>인광금속</b> 입니다.<br/>
-                        인광금속은 10년이상  차곡차곡 쌓은 실력과 성실함으로 당사를 찾아 주시는 고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
+                        인광금속은 10년이상  차곡차곡 쌓은 실력과 성실함으로 당사를 찾아 주시는 <br/>고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
 
                         최신설비와 축적된 기술로 더욱 신속하고 품질이 우수한 제품을 생산하며<br/> 고객만족에 힘쓰겠습니다.<br/>
 

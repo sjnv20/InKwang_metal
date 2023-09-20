@@ -18,7 +18,7 @@ const CMap = () => {
         const container = document.getElementById('maps');
         const options = {
         center: new kakao.maps.LatLng(35.178773, 128.9797885),
-        level: 2
+        level: 1
         };
 
         const map = new kakao.maps.Map(container, options);
@@ -69,7 +69,7 @@ const CMap = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px"}}>- 오시는 길 -</p></p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px", fontWeight:'400'}}>- 오시는 길 -</p></p></div>
             </div>
             <div className='side_map'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
@@ -85,7 +85,7 @@ const CMap = () => {
                     })}
                 </div>
                 <div className='kmap'>
-                    <div id='maps' style={{ width: '800px', height: '400px', marginLeft: '100px', marginTop: '50px'}}></div>
+                    <div id='maps' style={{ width: '900px', height: '400px', marginLeft: '100px', marginTop: '70px'}}></div>
                     <div id='address'> 
                         <table className='tab'>
                             <tbody>

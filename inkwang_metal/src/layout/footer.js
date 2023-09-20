@@ -4,6 +4,7 @@ import "../plugins/themify-icons/themify-icons.css"
 import Phone from '../images/icons8-phone-50.png'
 
 const Footer = () => {
+  if (window.location.pathname === '/') return null;
   return (
     <footer>
       <div className="f_logo">
