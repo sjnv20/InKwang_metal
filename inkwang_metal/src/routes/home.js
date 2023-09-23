@@ -26,6 +26,7 @@ const Home = () => {
           delay: 4000,
           disableOnInteraction: false,
         }}
+        style={{height:"850px"}}
       >
         <SwiperSlide>
           <div className='swiper_img1'>
