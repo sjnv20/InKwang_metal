@@ -40,7 +40,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img2} alt="h_img2"/>
           <div className='img_text1'>
-              <h1>높은 기술력으로 만드는<br/><span><span id='sp'></span> 인광금속</span> 의 미래</h1>
+              <h1>높은 기술력으로 만드는<br/><span> 인광금속</span> 의 미래</h1>
           </div>
         </div>
         </SwiperSlide>
@@ -48,7 +48,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img3} alt="h_img3"/>
           <div className='img_text2'>
-              <h1>뛰어난 기술로 더 나은 미래를 만들어가는<br/><span><span id='sp'>|</span> 인광금속</span></h1>
+              <h1>뛰어난 기술로 더 나은 <br/>미래를 만들어가는<span>인광금속</span></h1>
           </div>
         </div>
         </SwiperSlide>
@@ -56,7 +56,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img4} alt="h_img4"/>
           <div className='img_text3'>
-              <h1>인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></h1>
+              <h1>탁월한 품질과 빛나는 혁신,<br/> <span>인광금속</span>과 함께하세요.</h1>
           </div>
         </div>
         </SwiperSlide>
