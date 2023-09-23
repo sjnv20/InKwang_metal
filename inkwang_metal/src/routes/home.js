@@ -26,7 +26,7 @@ const Home = () => {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        style={{height:"850px"}}
+        style={{height:"100vh"}}
       >
         <SwiperSlide>
           <div className='swiper_img1'>
@@ -56,7 +56,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img4} alt="h_img4"/>
           <div className='img_text3'>
-              <h1>탁월한 품질과 빛나는 혁신,<br/> <span>인광금속</span>과 함께하세요.</h1>
+              <h1>파트너와 함께 성장하는 인광금속이<br/> 미래를 창조합니다</h1>
           </div>
         </div>
         </SwiperSlide>
