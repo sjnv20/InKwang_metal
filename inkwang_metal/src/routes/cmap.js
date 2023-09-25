@@ -32,8 +32,6 @@ const CMap = () => {
         marker.setMap(map);
         }, [])
 
-        
-
     const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
     const [ScrollActive, setScrollActive] = useState(false);
     
@@ -69,7 +67,7 @@ const CMap = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px", fontWeight:'400'}}>- 오시는 길 -</p></p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p id="c_p">- 오시는 길 -</p></p></div>
             </div>
             <div className='side_map'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
@@ -85,7 +83,7 @@ const CMap = () => {
                     })}
                 </div>
                 <div className='kmap'>
-                    <div id='maps' style={{ width: '900px', height: '400px', marginLeft: '100px', marginTop: '70px'}}></div>
+                    <div id='maps'></div>
                     <div id='address'> 
                         <table className='tab'>
                             <tbody>

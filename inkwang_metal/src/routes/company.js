@@ -46,7 +46,7 @@ const Company = () => {
         <div className="content">
             <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us<br/><p style={{fontSize:"30px", fontWeight:'400'}}>- 인사말 -</p></p></div>
+                <div className="c_text"><p class="c_title">About Us<br/><p id="c_p">- 인사말 -</p></p></div>
             </div>
             <div className='side_com'>
                 <div className={ScrollActive ? "Side" : "side_no"}>
