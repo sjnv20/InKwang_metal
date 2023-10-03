@@ -48,7 +48,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img3} alt="h_img3"/>
           <div className='img_text2'>
-              <h1>뛰어난 기술로 더 나은 <br/>미래를 만들어가는<span>인광금속</span></h1>
+              <h1>뛰어난 기술로 더 나은 <br/>미래를 만들어가는 <span>인광금속</span></h1>
           </div>
         </div>
         </SwiperSlide>
@@ -56,7 +56,7 @@ const Home = () => {
         <div className='swiper_img1'>
           <img src={h_img4} alt="h_img4"/>
           <div className='img_text3'>
-              <h1>파트너와 함께 성장하는 인광금속이<br/> 미래를 창조합니다</h1>
+              <h1>파트너와 함께 성장하는 <span>인광금속</span>이<br/> 미래를 창조합니다</h1>
           </div>
         </div>
         </SwiperSlide>
