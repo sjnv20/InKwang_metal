@@ -1,9 +1,10 @@
 import React from 'react';
-import '../scss/_header.scss'
+import '../scss/_home_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_home.scss'
 import "swiper/swiper.scss";
 
+import Logo from '../images/inkwang_logo.png';
 import h_img1 from '../images/inkwang_img/inkwang_1.jpeg';
 import h_img2 from '../images/inkwang_img/inkwang_img01.jpeg';
 import h_img3 from '../images/inkwang_img/inkwang_img07.jpeg';
@@ -13,9 +14,24 @@ import swiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Home = () => {
+  
   swiperCore.use([Autoplay]);
   return (
-    <div className='content'>
+  <div className='content'>
+    <header className="h_navigation">
+        <div className="h_logo">
+          <img src={Logo} alt="logo"/>
+          <a href='/'>인광금속</a>
+        </div>
+        <nav className="h_nav">
+          <a href="/">HOME</a>
+          <a href="/company">회사소개</a>
+          <a href="/product">제품소개</a>
+          <a href="/gallery">Gallery</a>
+          <div className="dot"></div>
+        </nav>
+    </header>
+
       <Swiper
         className='swiper-container'
         effect={'slide'}

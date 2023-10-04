@@ -24,6 +24,8 @@ const Header = () => {
     }; //  window 에서 스크롤을 감시를 종료
   });
 
+  if (window.location.pathname === '/') return null;
+
   return (
     <header className={ScrollActive ? "navigation nav-bg" : "navigation"}>
         <div className={ScrollActive ? "logo logo-pd" : "logo"}>
