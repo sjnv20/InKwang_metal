@@ -97,21 +97,22 @@ header{
         position: absolute;
         background-color: rgb(255, 255, 255);
         text-align: center;
-        top: 32px;
-        border: 1px solid rgb(124, 124, 124);
+        top: 35px;
+        border-radius: 10px;
     }
     .sublink a{
-        width: 140px;
-        height: 30px;
+        width: 150px;
+        height: 40px;
         color: black;
         display: flex;
+        font-family: $list-font;
+        font-size: 17px;
     }
     .sublink a:nth-child(1){
-        border-bottom: 1px solid rgb(124, 124, 124);
-        padding: 5px 40px;
+        padding: 10px 50px;
     }
     .sublink a:nth-child(2){
-        padding: 5px 30px;
+        padding: 10px 44px;
     }
 
     a {
