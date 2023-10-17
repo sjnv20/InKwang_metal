@@ -5,7 +5,7 @@ import '../scss/_company.scss'
 import '../scss/_SidebarItem.scss'
 
 import C_img from '../images/inkwang_img/inkwang_7.jpeg'
-import inKwang from '../images/inkwang_img/inkwangdoor.jpeg';
+import inKwang from '../images/inkwang_img/inkwang_door.jpeg';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
 import { useState, useEffect } from "react";

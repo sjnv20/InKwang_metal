@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import Logo from '../images/inkwang_logo.png';
+// import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
@@ -34,7 +35,15 @@ const Header = () => {
         </div>
         <nav className={ScrollActive ? "nav nav-pd" : "nav"}>
           <a href="/">HOME</a>
-          <a href="/company">회사소개</a>
+          <a href="/company">
+            <div className="linkwrap">
+              회사소개
+              <div className="sublink">
+                <a href="/company">인사말</a>
+                <a href="/cmap">오시는길</a>
+              </div>
+            </div>
+          </a>
           <a href="/product">제품소개</a>
           <a href="/gallery">Gallery</a>
           <div className="dot"></div>
