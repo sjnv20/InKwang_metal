@@ -3,23 +3,20 @@ import '../scss/_home_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_home.scss'
 import "swiper/swiper.scss";
+import 'swiper/components/effect-fade/effect-fade.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/navigation/navigation.scss';
 
 import Logo from '../images/inkwang_logo.png';
-//import h_img1 from '../images/inkwang_img/inkwang_1.jpeg';
-// import h_img2 from '../images/inkwang_img/inkwang_img01.jpeg';
-// import h_img3 from '../images/inkwang_img/inkwang_img07.jpeg';
-// import h_img4 from '../images/inkwang_img/inkwang_img02.jpeg';
 
-import { Parallax, Pagination } from 'swiper';
+import { Parallax, Pagination, EffectFade } from 'swiper';
 import swiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
 const Home = () => {
   
-  swiperCore.use([Autoplay, Pagination ]);
+  swiperCore.use([Autoplay, Pagination, EffectFade ]);
   return (
   <div className='content'>
     <header className="h_navigation">
@@ -38,45 +35,33 @@ const Home = () => {
 
       <Swiper
         className='swiper-container'
-        effect={'slide'}
+        effect={'fade'}
         loop={true}
         speed={1200}
-        parallax={true}
-        modules={[Parallax, Autoplay, Pagination]}
+        modules={[Parallax, Autoplay, Pagination, EffectFade]}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
         }}
+        fadeEffect={{crossFade: true}}
         pagination={{ clickable: true }}
         style={{height:"100vh"}}
       >
         <SwiperSlide>
-          <div className='swiper_img1 slide-1'>
-            <div className='slider-container'>
-              <h1 class="slider-sub-title">인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></h1>
-            </div>
-          </div>
+          <div className='swiper_img1 slide-1'></div>
+          <h1 class="slider-sub-title t_1">인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></h1>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='swiper_img1 slide-2'>
-          <div className='slider-container'>
-              <h1 class="slider-sub-title">높은 기술력으로 만드는<br/><span> 인광금속</span> 의 미래</h1>
-          </div>
-        </div>
+          <div className='swiper_img1 slide-2'></div>
+          <h1 class="slider-sub-title t_2">높은 기술력으로 만드는<br/><span> 인광금속</span>의 미래</h1>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='swiper_img1 slide-3'>
-          <div className='slider-container'>
-              <h1 class="slider-sub-title">뛰어난 기술로 더 나은 <br/>미래를 만들어가는 <span>인광금속</span></h1>
-          </div>
-        </div>
+          <div className='swiper_img1 slide-3'></div>
+          <h1 class="slider-sub-title t_3">뛰어난 기술로 더 나은 <br/>미래를 만들어가는 <span>인광금속</span></h1>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='swiper_img1 slide-4'>
-          <div className='slider-container'>
-              <h1 class="slider-sub-title">파트너와 함께 성장하는 <span>인광금속</span>이<br/> 미래를 창조합니다</h1>
-          </div>
-        </div>
+          <div className='swiper_img1 slide-4'></div>
+          <h1 class="slider-sub-title t_4">파트너와 함께 성장하는 <span>인광금속</span>이<br/><br/> 미래를 창조합니다</h1>
         </SwiperSlide>
       </Swiper>
        
