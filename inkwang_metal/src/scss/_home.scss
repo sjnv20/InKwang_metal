@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Jua&family=Noto+Sans+KR:wght@700&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
 @import "/node_modules/animate-sass/animate";
 @import 'animate.css';
@@ -11,7 +11,7 @@
     width: 100%;
 
     .slide-1{
-      background: url("../images/inkwang_img/inkwang_door.jpeg");
+      background: url("../images/inkwang_img/inkwang_front.jpeg");
       background-size: cover;
       filter: brightness(70%);
       height: 100%;
@@ -25,21 +25,21 @@
     }
 
     .slide-3{
-      background: url("../images/inkwang_img/inkwang_img07.jpeg");
+      background: url("../images/inkwang_img/inkwang_8.jpeg");
       background-size: cover;
       height: 100%;
       filter: brightness(60%);
     }
 
     .slide-4{
-      background: url("../images/inkwang_img/inkwang_img06.jpeg");
+      background: url("../images/inkwang_img/inkwang_9.jpeg");
       background-size: cover;
       height: 100%;
-      filter: brightness(60%);
+      filter: brightness(80%);
     }
 
     .slider-sub-title {
-      font-size: 45px;
+      font-size: 48px;
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
@@ -51,11 +51,13 @@
     }
 
     h1{
-      text-shadow: 3px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 3px #000000;
+      font-family: 'Noto Sans KR', sans-serif;
+      text-shadow: 1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 1px #000000;
+      line-height: 1.27;
     }
 
     .t_1{
-      top: 75%;
+      top: 70%;
       left: 4%;
     }
 
@@ -70,8 +72,13 @@
     }
 
     .t_4{
-      top: 45%;
+      height: 400px;
+      background-color: #0000008a;
+      padding-top: 20px;
+      top: 30%;
+      bottom: 25%;
       left: 25%;
+      right: 25%;
       text-align: center;
     }
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .content{
     flex: 1;
@@ -36,7 +37,7 @@
 .side_com{
     display: flex;
     height: 850px;
-
+    width: 100%;
     .company{
         height: 500px;
         display: flex;
@@ -45,12 +46,18 @@
         margin-top: 50px;
         margin-bottom: 60px;
         width: 80%;
+        @media #{$desktop} {
+            margin-left: 15px;
+        }
         #con1{
             display: flex;
             gap: 10px;
             border-bottom: 2px solid #d4d4d4;
             width: 550px;
             height: 100px;
+            @media #{$desktop} {
+                width: 500px;
+            }
             span{
                 font-size: 30px;
                 margin-top: 43px;
@@ -61,20 +68,30 @@
                 font-weight: 900;
                 margin-top: 40px;
                 height: 80px;
+                @media #{$desktop} {
+                    font-size: 28px;
+                }
             }
         }
         .con_img{
             display: flex;
             #con2{
+                height: 300px;
                 margin-top: 20px;
                 font-size: 16px;
                 width: 500px;
                 line-height: 2.5rem;
                 text-align: center;
+                @media #{$desktop} {
+                    font-size: 14px;
+                }
                 #sign{
                     text-align: right;
                     font-size: 23px;
                     margin-top: 10px;
+                    @media #{$desktop} {
+                        font-size: 21px;
+                    }
                     span{
                         color: #7b7b7b;
                         font-size: 15px;
@@ -86,6 +103,9 @@
                 width: 440px;
                 height: 400px;
                 margin-left: 100px;
+                @media #{$desktop} {
+                    width: 400px;
+                }
             }
         }
     }

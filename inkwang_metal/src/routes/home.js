@@ -61,7 +61,9 @@ const Home = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className='swiper_img1 slide-4'></div>
-          <h1 class="slider-sub-title t_4">파트너와 함께 성장하는 <span>인광금속</span>이<br/><br/> 미래를 창조합니다</h1>
+          <div id='t_4'>
+            <h1 class="slider-sub-title t_4">파트너와 함께 성장하는<br/><br/> <span>인광금속</span>이<br/><br/>미래를 창조합니다</h1>
+          </div>
         </SwiperSlide>
       </Swiper>
        

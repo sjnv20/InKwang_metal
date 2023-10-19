@@ -1,17 +1,27 @@
 @import "../scss/variables";
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .Side{
     margin-top: 90px;
     transition: .4s ease;
+    @media #{$desktop} {
+        width: 200px;
+    }
     p{
         margin-left: 15px;
         width: 150px;
         color: black;
+        @media #{$desktop} {
+            margin-left: 0px;
+        }
     }
     a:nth-child(1) p {
         font-size: 23px;
         font-family: $list-font-bold;
         height: 40px;
+        @media #{$desktop} {
+            font-size: 22px;
+        }
     }
 
     a:nth-child(n+2) p {
@@ -23,6 +33,9 @@
         height: 30px;
         background: linear-gradient(#71719eae 0 0) left / var(--p,0) no-repeat;
         transition: .4s,background-position 0s;
+        @media #{$desktop} {
+            margin-left: 35px;
+        }
         
     }
     a:nth-child(n+2) p:hover {
@@ -41,8 +54,17 @@
     width: 250px;
     text-align: center;
     font-size: 19px;
+    @media #{$desktop} {
+        font-size: 17px;
+    }
     &.active {
         font-size: 0px;
     }
     
+}
+
+.side_no{
+    @media #{$desktop}{
+        width: 200px;
+    }
 }
