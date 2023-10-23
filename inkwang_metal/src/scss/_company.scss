@@ -105,6 +105,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                 margin-left: 100px;
                 @media #{$desktop} {
                     width: 400px;
+                    height: 400px;
                 }
             }
         }
