@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .side_map{
     display: flex;
@@ -18,6 +19,10 @@
         height: 400px; 
         margin-left: 100px;
         margin-top: 70px;
+        @media #{$desktop} {
+            width: 700px;
+            margin-left: 50px;
+        }
     }
 
     #address {
