@@ -50,11 +50,12 @@
       position: absolute;
     }
 
-    h1{
+    pre{
       font-family: 'Noto Sans KR', sans-serif;
       text-shadow: 1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 1px #000000;
       line-height: 1.27;
     }
+
 
     .t_1{
       top: 70%;
@@ -80,6 +81,7 @@
       left: 25%;
       right: 25%;
       text-align: center;
+      width: 800px;
     }
 
     .swiper-pagination-bullet {
