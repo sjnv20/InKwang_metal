@@ -5,7 +5,6 @@ import '../scss/_cmap.scss'
 import '../scss/_SidebarItem.scss'
 import './kakao'
 
-// import C_img from '../images/inkwang_img/inkwang_door.jpeg'
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
 import { useState, useEffect } from "react";
@@ -84,33 +83,40 @@ const CMap = () => {
                 </div>
                 <div className='kmap'>
                     <div id="con1">
-                        <span className="ti-location-arrow"></span><p id="tit">오시는길</p>
+                        <span className="ti-map-alt"></span><p id="tit">오시는 길</p>
                     </div>
                     <div style={{display:"flex"}}>
                         <div id='maps'></div>
-                        <div id='address'> 
-                            <table className='tab'>
-                                <tbody>
-                                    <tr>
-                                        <th>주소</th>
-                                        <td id='t_bg'>본사</td> 
-                                        <td id='t_form'>(46910) 부산광역시 사상구 낙동대로1338번길 68</td>
-                                    </tr>
-                                    <tr>
-                                        <th rowSpan={3}>전화<br/>&<br/>E-mail</th>
-                                        <td id='t_bg'>전화</td> 
-                                        <td id='t_form'>051 . 324 . 5051</td>
-                                    </tr>
-                                    <tr>
-                                        <td id='t_bg'>Fax</td>
-                                        <td id='t_form'>324 . 5053</td>	
-                                    </tr>
-                                    <tr>
-                                        <td id='t_bg'>E-mail</td>
-                                        <td id='t_form'>cc707200@hanmail.net</td>	
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div className='address'> 
+                            <div>
+                                <div style={{display:"flex"}}>
+                                    <p>
+                                        <span className="ti-location-pin title"><sapn id='title'> Location</sapn></span>
+                                    </p>
+                                    <div id='line'></div>
+                                </div>
+                                <div style={{paddingLeft:"25px", marginTop:"30px"}} >
+                                    <p>
+                                        <span id='fill'>부산광역시 사상구 낙동대로1338번길 68 (삼락동, 인광금속)<br/><br/>68, Nakdong-daero 1338beon-gil, Sasang-gu, Busan, <br/>Republic of Korea</span>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div style={{marginTop:"60px"}}>
+                                <div style={{display:"flex"}}>
+                                    <p>
+                                        <span className="ti-comments title"><sapn id='title'> Contact&nbsp;&nbsp;</sapn></span>
+                                    </p>
+                                    <div id='line'></div>
+                                </div>
+                                <div style={{paddingLeft:"25px", marginTop:"30px"}} >
+                                    <p>
+                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/><br/>
+                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/><br/>
+                                        <span id='fill'>E-mail. &nbsp;&nbsp;cc707200@hanmail.net</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
