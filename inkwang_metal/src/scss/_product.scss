@@ -29,35 +29,13 @@
     }
 }
 
-.prd{
-    height: 850px;
+.box{
+   margin: 0 auto;
+   width: 800px;
+   height: 800px;
+}
 
-    
-    // Tabs
-    .tab-set {
-        padding: 20px;
-        border: 1px solid #a5acb1;
-        border-radius: 5px;
-        background: #fff;
-    }
-    
-    .tab-list {
-        display: flex;
-        position: relative;
-    }
-    
-    .tab-list-item {
-        flex: 1;
-        padding: 12px;
-        text-align: center;
-        cursor: pointer;
-        opacity: 0.5;
-        transition: opacity 180ms ease-out;
-        outline: 0; // add focus state for better accessibility
-        
-        &:hover,
-        &.is-active {
-        opacity: 1;
-        }
-    }
+.pr_img{
+    width: 500px;
+    height: 400px;
 }
