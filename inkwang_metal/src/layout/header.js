@@ -7,7 +7,7 @@ const Header = () => {
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
   const [ScrollActive, setScrollActive] = useState(false);
   function handleScroll() {
-    if (ScrollY > 100) {
+    if (ScrollY > 40) {
       setScrollY(window.pageYOffset);
       setScrollActive(true);
     } else {
@@ -28,12 +28,12 @@ const Header = () => {
   if (window.location.pathname === '/') return null;
 
   return (
-    <header className={ScrollActive ? "navigation nav-bg" : "navigation"}>
-        <div className={ScrollActive ? "logo logo-pd" : "logo"}>
+    <header className={ScrollActive ? "navigation nav-bg" : "navigation nav-bg"}>
+        <div className={ScrollActive ? "logo logo-pd" : "logo logo-pd"}>
           <img src={Logo} alt="logo"/>
           <a href='/'>인광금속</a>
         </div>
-        <nav className={ScrollActive ? "nav nav-pd" : "nav"}>
+        <nav className={ScrollActive ? "nav nav-pd" : "nav nav-pd"}>
           <a href="/">HOME</a>
           <a href="/company">
             <div className="linkwrap">

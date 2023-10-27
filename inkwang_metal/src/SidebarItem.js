@@ -5,7 +5,7 @@ function SidebarItem({ menu, isActive }) {
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
   const [ScrollActive, setScrollActive] = useState(false);
   function handleScroll() {
-    if (ScrollY > 100) {
+    if (ScrollY > 40) {
       setScrollY(window.pageYOffset);
       setScrollActive(true);
     } else {
@@ -24,11 +24,11 @@ function SidebarItem({ menu, isActive }) {
   });
   
   return isActive === true ? (
-    <div className={ScrollActive ? "sidebar-item" : "sidebar-item active"}>
+    <div className={ScrollActive ? "sidebar-item" : "sidebar-item"}>
       <p>{menu.name}</p>
     </div>
   ) : (
-    <div className={ScrollActive ? "sidebar-item" : "sidebar-item active"}>
+    <div className={ScrollActive ? "sidebar-item" : "sidebar-item"}>
       <p>{menu.name}</p>
     </div>
   );

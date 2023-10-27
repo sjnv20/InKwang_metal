@@ -4,21 +4,43 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .side_map{
     display: flex;
-    height: 950px;
-}
-
-#address{
-    margin-left: 100px;
-    margin-top: 20px;
+    height: 890px;
 }
 
 .kmap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    #con1{
+        display: flex;
+        gap: 10px;
+        width: 150px;
+        height: 50px;
+        margin-left: 13px;
+        @media #{$desktop} {
+            width: 500px;
+        }
+        span{
+            font-size: 30px;
+            margin-top: 43px;
+        }
+        #tit{
+            font-size: 30px;
+            font-family: $logo-font;
+            font-weight: 900;
+            margin-top: 40px;
+            height: 80px;
+            @media #{$desktop} {
+                font-size: 28px;
+            }
+        }
+    }
 
     #maps {
-        width: 900px;
+        width: 500px;
         height: 400px; 
-        margin-left: 100px;
-        margin-top: 70px;
+        margin-left: 13px;
+        margin-top: 50px;
         @media #{$desktop} {
             width: 700px;
             margin-left: 50px;
@@ -26,17 +48,18 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
     }
 
     #address {
-        
+        margin-left: 30px;
+        margin-top: 30px;
         .tab{
             margin-top: 20px;
-            width: 900px;
-            height: 120px;
+            width: 600px;
+            height: 400px;
             text-align: center;
             th{
                 padding: 10px;
                 vertical-align: middle;
                 text-align: center;
-                width: 150px;
+                width: 90px;
                 background-color: rgb(191, 198, 240);
                 font-weight: normal;
             }

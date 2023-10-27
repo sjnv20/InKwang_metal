@@ -4,7 +4,7 @@ import '../scss/_footer.scss'
 import '../scss/_company.scss'
 import '../scss/_SidebarItem.scss'
 
-import C_img from '../images/inkwang_img/inkwang_7.jpeg'
+// import C_img from '../images/inkwang_img/inkwang_img05.jpeg'
 import inKwang from '../images/inkwang_img/inkwang_door.jpeg';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
@@ -14,7 +14,7 @@ const Company = () => {
   const [ScrollY, setScrollY] = useState(0);
   const [ScrollActive, setScrollActive] = useState(false);
   function handleScroll() {
-    if (ScrollY > 100) {
+    if (ScrollY > 40) {
       setScrollY(window.pageYOffset);
       setScrollActive(true);
     } else {
@@ -44,12 +44,12 @@ const Company = () => {
 
     return (
         <div className="content">
-            <div className="c_title_back">
+            {/* <div className="c_title_back">
                 <div className="c_img"><img src={C_img} alt="c_img1"/></div>
                 <div className="c_text"><p class="c_title">About Us<br/><p id="c_p">- 인사말 -</p></p></div>
-            </div>
+            </div> */}
             <div className='side_com'>
-                <div className={ScrollActive ? "Side" : "side_no"}>
+                <div className={ScrollActive ? "Side" : "Side"}>
                     {menus.map((menu, index) => {
                         return(
                             <NavLink to={menu.path} key={index}>
@@ -69,7 +69,7 @@ const Company = () => {
                         <div id="con2">
                         <pre style={{fontFamily:"NanumSquare"}}>
                             환영합니다.<br/>
-                            인산염피막, 알칼리 착색을 전문으로 하는 <b>인광금속</b> 입니다.<br/>
+                            인산염피막, 알카리 착색을 전문으로 하는 <b>인광금속</b> 입니다.<br/>
                             인광금속은 10년 이상 차곡차곡 쌓은 실력과 성실함으로 <br/>당사를 찾아 주시는 고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
                             최신 설비와 축적된 기술로 더욱 신속하고 <br/>품질이 우수한 제품을 생산하며 고객만족에 힘쓰겠습니다.<br/>
                             인광금속을 찾아주시는 모든 분들의 사업 번창을 기원하며<br/>
