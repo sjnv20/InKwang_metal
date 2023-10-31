@@ -1,13 +1,12 @@
 import React from 'react';
-import '../scss/_home_header.scss'
+import '../scss/_header.scss'
+// import '../scss/_home_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_home.scss'
 import "swiper/swiper.scss";
 import 'swiper/components/effect-fade/effect-fade.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/navigation/navigation.scss';
-
-import Logo from '../images/inkwang_logo.png';
 
 import { Parallax, Pagination, EffectFade } from 'swiper';
 import swiperCore, { Autoplay } from "swiper";
@@ -19,20 +18,6 @@ const Home = () => {
   swiperCore.use([Autoplay, Pagination, EffectFade ]);
   return (
   <div className='content'>
-    <header className="h_navigation">
-        <div className="h_logo">
-          <img src={Logo} alt="logo"/>
-          <a href='/'>인광금속</a>
-        </div>
-        <nav className="h_nav">
-          <a href="/">HOME</a>
-          <a href="/company">회사소개</a>
-          <a href="/product">제품소개</a>
-          <a href="/gallery">Gallery</a>
-          <div className="dot"></div>
-        </nav>
-    </header>
-
       <Swiper
         className='swiper-container'
         effect={'fade'}
@@ -40,7 +25,7 @@ const Home = () => {
         speed={1200}
         modules={[Parallax, Autoplay, Pagination, EffectFade]}
         autoplay={{
-          delay: 4000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         fadeEffect={{crossFade: true}}
@@ -49,11 +34,11 @@ const Home = () => {
       >
         <SwiperSlide>
           <div className='swiper_img1 slide-1'></div>
-          <pre class="slider-sub-title t_1">인산염피막, 알카리착색 전문<br/><span><span id='sp'>|</span> 인광금속</span></pre>
+          <pre class="slider-sub-title t_1">인산염피막, 알카리착색 전문<br/><span>인광금속</span></pre>
         </SwiperSlide>
         <SwiperSlide>
           <div className='swiper_img1 slide-2'></div>
-          <pre class="slider-sub-title t_2">높은 기술력으로 만드는<br/><span> 인광금속</span>의 미래</pre>
+          <pre class="slider-sub-title t_2">높은 기술력으로 만드는<br/><span>인광금속</span>의 미래</pre>
         </SwiperSlide>
         <SwiperSlide>
           <div className='swiper_img1 slide-3'></div>
@@ -62,7 +47,7 @@ const Home = () => {
         <SwiperSlide>
           <div className='swiper_img1 slide-4'></div>
           <div id='t_4'>
-            <pre class="slider-sub-title t_4">파트너와 함께 성장하는<br/><br/> <span>인광금속</span>이<br/><br/>미래를 창조합니다</pre>
+            <pre class="slider-sub-title t_4">파트너와 함께 성장하는<br/><span>인광금속</span>이<br/>미래를 창조합니다</pre>
           </div>
         </SwiperSlide>
       </Swiper>

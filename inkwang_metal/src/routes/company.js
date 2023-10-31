@@ -4,7 +4,7 @@ import '../scss/_footer.scss'
 import '../scss/_company.scss'
 import '../scss/_SidebarItem.scss'
 
-// import C_img from '../images/inkwang_img/inkwang_img05.jpeg'
+import Logo from '../images/logo_f.png'
 import inKwang from '../images/inkwang_img/inkwang_door.jpeg';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
@@ -59,20 +59,21 @@ const Company = () => {
                 </div>
                 <div className="company">
                     <div id="con1">
-                        <span className="ti-medall"></span><p id="tit">인 사 말</p>
+                        <span className="ti-medall"></span><p id="tit">인사말</p>
                     </div>
                     <div className='con_img'>
                         <div id="con2">
-                        <pre style={{fontFamily:"NanumSquare"}}>
-                            환영합니다.<br/>
-                            인산염피막, 알카리 착색을 전문으로 하는 <b>인광금속</b> 입니다.<br/>
-                            인광금속은 10년 이상 차곡차곡 쌓은 실력과 성실함으로 <br/>당사를 찾아 주시는 고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
-                            최신 설비와 축적된 기술로 더욱 신속하고 <br/>품질이 우수한 제품을 생산하며 고객만족에 힘쓰겠습니다.<br/>
-                            인광금속을 찾아주시는 모든 분들의 사업 번창을 기원하며<br/>
-                            당사도 함께 성장하고자 합니다.<br/>
-                            감사합니다.
-                        </pre>
-                        <p id='sign'><span>대표</span> 이순수 & 최지연</p>
+                            <img src={Logo} alt='#'/>
+                            <pre style={{fontFamily:"NanumSquare", position:"absolute", top:"2%"}}>
+                                환영합니다.<br/>
+                                인산염피막, 알카리 착색을 전문으로 하는 <b style={{fontFamily:"NanumSquareBold"}}>인광금속</b> 입니다.<br/>
+                                인광금속은 10년 이상 차곡차곡 쌓은 실력과 성실함으로 <br/>당사를 찾아 주시는 고객분들에게 꼭 필요한 파트너가 되고 싶습니다.<br/>
+                                최신 설비와 축적된 기술로 더욱 신속하고 <br/>품질이 우수한 제품을 생산하며 고객만족에 힘쓰겠습니다.<br/>
+                                인광금속을 찾아주시는 모든 분들의 사업 번창을 기원하며<br/>
+                                당사도 함께 성장하고자 합니다.<br/>
+                                감사합니다.
+                            </pre>
+                            <p id='sign'><span>대표</span> 이순수 & 최지연</p>
                         </div>
                         <div>
                             <img src={inKwang} alt="door"/>
@@ -80,6 +81,12 @@ const Company = () => {
                     </div>
                 </div>
             </div>
+            <div className="f">
+                <p> <b>대표명</b> &nbsp;: &nbsp;이순수 & 최지연 &nbsp;&nbsp;|&nbsp;&nbsp;<b>사업자번호</b>&nbsp;: &nbsp;606-32-69680</p>
+                <p> <b>Fax</b> &nbsp;: &nbsp;324 . 5053 &nbsp;&nbsp;|&nbsp;&nbsp;<b>E-mail</b> &nbsp;: &nbsp;cc707200@hanmail.net</p>
+                <p> (46910) 부산광역시 사상구 낙동대로1338번길 68 </p>
+            </div>
+            <p id="copyright">copyright © inkwangmetal. & sjnv20. All Rights Reserved.</p>
         </div>
     );
 };

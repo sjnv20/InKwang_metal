@@ -33,17 +33,13 @@ header{
 
 .logo{
     display: flex;
-    gap: 15px;
     height: 100px;
-    padding-top: 30px;
+    padding-top: 20px;
     transition: .3s ease;
     &.logo-pd{
         padding-left: 10px;
-        a{
-            color: black;
-        }
     }
-    a {
+    .h_nav a {
         margin-top:12px;
         font-size: 30px;
         font-weight: 800;
@@ -55,16 +51,17 @@ header{
 
     img{
         margin-left: 140px;
-        width: 50px;
-        height: 50px;
+        width: 160px;
+        height: 55px;
         cursor: pointer;
     }
 }
 
 .nav{
+    font-family: $list-font-bold;
     display: flex;
     position: absolute;
-    top: 90px;
+    top: 88px;
     left: 70%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -83,11 +80,14 @@ header{
 
     .linkwrap{
         width: 150px;
+        height: 35px;
         display: relative;
         z-index: 99;
         text-align: center;
     }
     .sublink{
+       margin-top: 10px;
+    // border: 1px solid #ffffff00;
        display:none;
        text-align: center;
     }
@@ -96,9 +96,10 @@ header{
         z-index: 10;
         position: absolute;
         background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 4px #9a9a9a;
         text-align: center;
         top: 35px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .sublink a{
         width: 150px;
@@ -122,7 +123,6 @@ header{
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: $list-font-bold;
-        font-weight: 900;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         display: inline-block;
@@ -147,32 +147,32 @@ header{
       }
 
     a:nth-child(1):hover ~ .dot {
-        -webkit-transform: translateX(-520px);
-        transform: translateX(-520px);
+        -webkit-transform: translateX(-523px);
+        transform: translateX(-523px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
     a:nth-child(2):hover ~ .dot {
-        -webkit-transform: translateX(-380px);
-        transform: translateX(-380px);
+        -webkit-transform: translateX(-374px);
+        transform: translateX(-374px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
     a:nth-child(3):hover ~ .dot {
-        -webkit-transform: translateX(-220px);
-        transform: translateX(-220px);
+        -webkit-transform: translateX(-225px);
+        transform: translateX(-225px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
     a:nth-child(4):hover ~ .dot {
-        -webkit-transform: translateX(-75px);
-        transform: translateX(-75px);
+        -webkit-transform: translateX(-78px);
+        transform: translateX(-78px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;

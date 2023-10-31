@@ -1,63 +1,49 @@
 /* footer.css */
 @import '../scss/_variables.scss';
 $desktop: "(min-width: 992px) and (max-width: 1215px)";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 footer{
-    height: 220px;
+    height: 60px;
     width: 100%;
     background-color: $back-color;
     color: rgb(184, 184, 184);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     .f_logo{
-        height: 40px;
         display: flex;
-        gap: 73%;
+        gap: 76%;
         color: rgb(219, 219, 219);
-        a{
-            padding: 20px 0 0 30px;
-            font-size: 30px;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            color: rgb(219, 219, 219);
-            font-family: $logo-font;
-            @media #{$desktop} {
-                padding: 20px;
-            }
+        .f_img{
+            width:120px;
+            height: 38px;
+            margin: 13px 0 0 55px;
         }
         div{
             display: flex;
-            gap: 5px;
-        }
-        img{
-            margin-top: 15px;
-            width: 30px;
-            height: 30px;
-            transform: rotate(30deg);
-        }
-        #tel{
-            margin-top: 15px;
-            text-align: right;
-            font-size: 25px;
-            font-family: $logo-font;
-            @media #{$desktop} {
-                padding-right: 10px;;
+            gap: 8px;
+
+            // .call_img{
+            //     margin-top: 25px;
+            //     width: 30px;
+            //     height: 30px;
+            // }
+            
+            #tel{
+                margin-top: 20px;
+                text-align: right;
+                font-size: 20px;
+                font-family: 'GmarketSansMedium ';
+                font-weight: 900;
+                @media #{$desktop} {
+                    padding-right: 10px;;
+                }
             }
         }
-    }
-    
-    .content{
-        text-align: center;
-        font-size: 15px;
-        margin-top: 30px;
-        p{
-            line-height: 1.8;
-        }
-    }
-
-    #copyright{
-        font-size: 10px;
-        text-align: center;
     }
 }

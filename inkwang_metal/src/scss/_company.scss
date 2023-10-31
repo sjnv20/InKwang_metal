@@ -36,7 +36,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .side_com{
     display: flex;
-    height: 890px;
+    height: 680px;
     width: 100%;
     .company{
         height: 500px;
@@ -53,7 +53,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             display: flex;
             gap: 10px;
             border-bottom: 2px solid #d4d4d4;
-            width: 550px;
+            width: 500px;
             height: 100px;
             @media #{$desktop} {
                 width: 500px;
@@ -65,9 +65,9 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             #tit{
                 font-size: 30px;
                 font-family: $logo-font;
-                font-weight: 900;
                 margin-top: 40px;
                 height: 80px;
+                letter-spacing: 4px;
                 @media #{$desktop} {
                     font-size: 28px;
                 }
@@ -76,19 +76,32 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         .con_img{
             display: flex;
             #con2{
+                position: relative;
                 height: 300px;
                 margin-top: 20px;
                 font-size: 16px;
                 width: 500px;
                 line-height: 2.5rem;
-                text-align: center;
+                text-align: left;
                 @media #{$desktop} {
                     font-size: 14px;
                 }
+                
+                img{
+                    filter: brightness(112%);
+                    width: 440px;
+                    height: 400px;
+                }
+
+
                 #sign{
-                    text-align: right;
-                    font-size: 23px;
+                    font-family: $list-font-bold;
+                    top: 115%;
+                    left: 65%;
+                    position: absolute;
+                    font-size: 20px;
                     margin-top: 10px;
+                    font-weight: 700;
                     @media #{$desktop} {
                         font-size: 21px;
                     }
@@ -97,16 +110,33 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                         font-size: 15px;
                     }
                 }
+
             }
 
             img{
                 width: 440px;
                 height: 400px;
-                margin-left: 100px;
+                margin-left: 70px;
                 @media #{$desktop} {
                     width: 400px;
                 }
             }
         }
     }
+}
+
+.f{
+    height: 160px;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    p{
+        line-height: 1.8;
+    }
+}
+
+#copyright{
+    font-size: 10px;
+    text-align: center;
 }

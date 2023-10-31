@@ -3,6 +3,7 @@
 @import "/node_modules/animate-sass/animate";
 @import 'animate.css';
 
+
 .content{
     flex: 1;
 }
@@ -39,43 +40,29 @@
     }
 
     .slider-sub-title {
-      font-size: 48px;
+      font-family: $logo-font;
+      font-size: 55px;
+      letter-spacing: 3px;
       font-style: normal;
       font-stretch: normal;
-      line-height: normal;
-      letter-spacing: 9.2px;
-      top:70%;
-      left: 55%;
+      line-height: 65px;
       color: #ffffff;
       position: absolute;
+      top: 62%;
+      left: 10%;
     }
 
     pre{
       font-family: 'Noto Sans KR', sans-serif;
-      text-shadow: 1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 1px #000000;
+      text-shadow: 5px 5px 2px #0000005b;
       line-height: 1.27;
-    }
-
-
-    .t_1{
-      top: 70%;
-      left: 4%;
-    }
-
-    .t_2{
-      top: 23%;
-      left: 3%;
-    }
-
-    .t_3{
-      top: 50%;
-      left: 5%;
     }
 
     .t_4{
       height: 400px;
+      line-height: 75px;
       background-color: #0000008a;
-      padding-top: 20px;
+      padding-top: 80px;
       top: 30%;
       bottom: 25%;
       left: 25%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import Logo from '../images/inkwang_logo.png';
+import Logo from '../images/ik_logo.png';
 // import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -25,14 +25,13 @@ const Header = () => {
     }; //  window 에서 스크롤을 감시를 종료
   });
 
-  if (window.location.pathname === '/') return null;
+  // if (window.location.pathname === '/') return null;
   if (window.location.pathname === '/product') return null;
 
   return (
     <header className={ScrollActive ? "navigation nav-bg" : "navigation nav-bg"}>
         <div className={ScrollActive ? "logo logo-pd" : "logo logo-pd"}>
-          <img src={Logo} alt="logo"/>
-          <a href='/'>인광금속</a>
+          <a href='/'><img src={Logo} alt="/"/></a>
         </div>
         <nav className={ScrollActive ? "nav nav-pd" : "nav nav-pd"}>
           <a href="/">HOME</a>
