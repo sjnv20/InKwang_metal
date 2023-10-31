@@ -6,6 +6,7 @@ import Product from "./routes/product"
 import Gallery from "./routes/gallery";
 import KMap from "./routes/kakao";
 import CMap from "./routes/cmap";
+import Productr from "./routes/product_r";
 
 
 function App () {
@@ -14,6 +15,7 @@ function App () {
         <Route path="/" element={<Home/>}/>
         <Route path="/company" element={<Company/>}/>
         <Route path="/product" element={<Product/>}/>
+        <Route path="/product_r" element={<Productr/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/kakaomap" element={<KMap/>}/>
         <Route path="/cmap" element={<CMap/>}/>

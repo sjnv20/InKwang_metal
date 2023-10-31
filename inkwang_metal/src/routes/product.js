@@ -3,11 +3,15 @@ import '../scss/_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_product.scss'
 
-import P_img from '../images/inkwang_img/inkwang_img02.jpeg'
 import P_product from '../images/inkwang_img/p_product.jpeg'
-import R_product from '../images/inkwang_img/r_product.jpeg'
+import pm_1 from '../images/pm1.jpeg'
+import pm_2 from '../images/pm2.jpeg'
+import pm_3 from '../images/pm3.jpeg'
+import pm_4 from '../images/pm4.jpeg'
 
 import PropTypes from 'prop-types';
+import { useTheme } from '@mui/material/styles';
+import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
@@ -46,8 +50,8 @@ const Product = () => {
       <div
         role="tabpanel"
         hidden={value !== index}
-        id={`vertical-tabpanel-${index}`}
-        aria-labelledby={`vertical-tab-${index}`}
+        id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
         {...other}
       >
         {value === index && (
@@ -67,11 +71,13 @@ const Product = () => {
   
   function a11yProps(index) {
     return {
-      id: `vertical-tab-${index}`,
-      'aria-controls': `vertical-tabpanel-${index}`,
+      id: `full-width-tab-${index}`,
+    'aria-controls': `full-width-tabpanel-${index}`,
     };
   }
 
+
+  const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -82,16 +88,12 @@ const Product = () => {
 
     const menus = [
         { name: "제품소개", path: "/product" },
-        { name: "피막 제품", path: "/product" },
-        { name: "착색 제품", path: "/product" },
+        { name: "인산염 피막", path: "/product" },
+        { name: "알카리 착색", path: "/product_r" },
     ];
 
   return (
     <div className='content'>
-      {/* <div className="p_title_back">
-              <div className="p_img"><img src={P_img} alt="p_img1"/></div>
-              <div className="p_text"><p class="p_title">Product<br/><p id="p_p">- 제품 소개 -</p></p></div>
-      </div> */}
       <div className='side_come'>
         <div className={ScrollActive ? "Side" : "Side"}>
           {menus.map((menu, index) => {
@@ -107,32 +109,38 @@ const Product = () => {
         </div>
         <div className='product'>
           <div className="box">
-            <Box  sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', marginTop:"50px", height: 500 }}
-            >
-                <Tabs 
-                  orientation="vertical"
-                  variant="scrollable"
+            <Box sx={{ bgcolor: 'background', width: 880 }}>
+              <AppBar position="static">
+                <Tabs
                   value={value}
                   onChange={handleChange}
-                  TabIndicatorProps={{
-                    sx : { background: "#372aca"}
-                  }}
-                  aria-label="Vertical tabs example"  
-                  sx={{ borderRight: 1, borderColor: 'divider' }}
+                  indicatorColor="gray"
+                  textColor="inherit"
+                  variant="fullWidth"
+                  aria-label="full width tabs example"
                 >
-                <Tab style={{color:"#372aca"}} label="인산염 피막" {...a11yProps(0)} />
-                <Tab style={{color:"#372aca"}} label="알카리 착색" {...a11yProps(1)} />
+                  <Tab sx={{backgroundColor:"#15137C", fontSize:"18px", fontFamily:"NanumSquareBold"}} label="인산염 피막" {...a11yProps(0)} />
+                  <Tab sx={{backgroundColor:"#15137C", fontSize:"18px", fontFamily:"NanumSquareBold"}} label="상세 제품" {...a11yProps(1)} />
                 </Tabs>
-              <TabPanel value={value} index={0}>
-                <div className='pr_img'>
-                  <img src={P_product} alt='p' className='pr_img'></img>
-                </div>
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <div className='pr_img'>
-                <img src={R_product} alt='p' className='pr_img'></img>
-              </div>
-            </TabPanel>
+              </AppBar>
+                <TabPanel value={value} index={0} dir={theme.direction}>
+                  <div className='pr_fill'>
+                    <img className="pr_img" src={P_product} alt='/'/>
+                    <pre>
+                      | 특징 : <br/>
+                      | 표준조건 : <br/>
+                      | 용도 :
+                    </pre>
+                  </div>
+                </TabPanel>
+                <TabPanel value={value} index={1} dir={theme.direction}>
+                  <div className='pr_fill2'>
+                    <img className="pm_4" src={pm_4} alt='/'/>
+                    <img className="pm_2" src={pm_2} alt='/'/>
+                    <img className="pm_1" src={pm_1} alt='/'/>
+                    <img className="pm_3" src={pm_3} alt='/'/>
+                  </div>
+                </TabPanel>
             </Box>
           </div>
         </div>
