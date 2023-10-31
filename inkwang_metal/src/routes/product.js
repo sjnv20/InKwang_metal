@@ -109,7 +109,7 @@ const Product = () => {
         </div>
         <div className='product'>
           <div className="box">
-            <Box sx={{ bgcolor: 'background', width: 880 }}>
+            <Box sx={{ bgcolor: 'background', width: 880, height:400 }}>
               <AppBar position="static">
                 <Tabs
                   value={value}

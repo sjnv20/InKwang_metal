@@ -43,7 +43,15 @@ const Header = () => {
               </div>
             </div>
           </a>
-          <a href="/product">제품소개</a>
+          <a href="/product">
+            <div className="linkwrap"> 
+              제품소개
+              <div className="sublink">
+                <a href='/product' style={{width:"160px", padding:"10px 35px"}}>인산염 피막</a>
+                <a href='/product_r' style={{width:"160px", padding:"10px 35px"}}>알카리 착색</a>
+              </div>
+            </div>
+          </a>
           <a href="/gallery">Gallery</a>
           <div className="dot"></div>
         </nav>
