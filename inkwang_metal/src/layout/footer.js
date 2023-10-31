@@ -1,7 +1,6 @@
 /* footer.js */
 import React from 'react';
 import "../plugins/themify-icons/themify-icons.css"
-// import Phone from '../images/telephone.png'
 import Logo_f from '../images/ik_logo_f.png'
 
 const Footer = () => {

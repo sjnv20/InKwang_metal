@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import Logo from '../images/ik_logo.png';
-// import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
@@ -24,8 +23,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     }; //  window 에서 스크롤을 감시를 종료
   });
-
-  // if (window.location.pathname === '/') return null;
 
   return (
     <header className={ScrollActive ? "navigation nav-bg" : "navigation nav-bg"}>

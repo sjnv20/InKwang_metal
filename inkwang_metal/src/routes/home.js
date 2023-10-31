@@ -1,6 +1,5 @@
 import React from 'react';
 import '../scss/_header.scss'
-// import '../scss/_home_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_home.scss'
 import "swiper/swiper.scss";

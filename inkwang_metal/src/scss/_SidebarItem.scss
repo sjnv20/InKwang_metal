@@ -4,7 +4,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 .Side{
     margin-top: 150px;
     transition: .4s ease;
-    width: 170px;
+    width: 175px;
     @media #{$desktop} {
         width: 200px;
     }
