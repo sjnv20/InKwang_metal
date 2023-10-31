@@ -48,7 +48,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
     .address {
         margin-left: 60px;
-        margin-top: 80px;
+        margin-top: 90px;
         width: 550px;
         .title{
             display: flex;
@@ -74,9 +74,9 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             margin-left: 8px;
         }
         #fill{
-            font-family: $list-font-bold;
+            font-family: $list-font;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
             color: rgb(0, 0, 0);
         }
     

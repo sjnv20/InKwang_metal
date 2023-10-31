@@ -95,24 +95,24 @@ const CMap = () => {
                                     </p>
                                     <div id='line'></div>
                                 </div>
-                                <div style={{paddingLeft:"25px", marginTop:"30px"}} >
+                                <div style={{paddingLeft:"25px", marginTop:"25px", width:"460px"}} >
                                     <p>
-                                        <span id='fill'>부산광역시 사상구 낙동대로1338번길 68 (삼락동, 인광금속)<br/><br/>68, Nakdong-daero 1338beon-gil, Sasang-gu, Busan, <br/>Republic of Korea</span>
+                                        <span id='fill'>부산광역시 사상구 낙동대로1338번길 68 (삼락동, 인광금속)<br/><br/>68, Nakdong-daero 1338beon-gil, Sasang-gu, Busan, Republic of Korea</span>
                                         
                                     </p>
                                 </div>
                             </div>
-                            <div style={{marginTop:"60px"}}>
+                            <div style={{marginTop:"45px"}}>
                                 <div style={{display:"flex"}}>
                                     <p>
                                         <span className="ti-comments title" style={{gap:"8px"}}><sapn id='title'> Contact</sapn></span>
                                     </p>
                                     <div id='line1'></div>
                                 </div>
-                                <div style={{paddingLeft:"30px", marginTop:"30px"}} >
+                                <div style={{paddingLeft:"30px", marginTop:"25px", lineHeight:"2.3rem"}} >
                                     <p>
-                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/><br/>
-                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/><br/>
+                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/>
+                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/>
                                         <span id='fill'>E-mail. &nbsp;&nbsp;cc707200@hanmail.net</span>
                                     </p>
                                 </div>
