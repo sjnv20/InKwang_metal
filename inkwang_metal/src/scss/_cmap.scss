@@ -4,7 +4,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .side_map{
     display: flex;
-    height: 890px;
+    height: 680px;
 }
 
 .kmap{
@@ -27,7 +27,6 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         #tit{
             font-size: 30px;
             font-family: $logo-font;
-            font-weight: 900;
             margin-top: 40px;
             height: 80px;
             @media #{$desktop} {
@@ -53,23 +52,29 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         width: 550px;
         .title{
             display: flex;
-            gap: 5px;
+            gap: 6px;
             font-size: 19px;
-            color: #71719e;
-            font-weight: bold;
+            color: #919090;
             #title{
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $logo-font;
             }
         }
         #line{
-            border: 1px solid #71719eae;
-            width: 400px;
+            border: 1px solid #d4d4d4;
+            width: 335px;
+            height: 0.5px;
+            margin-top: 9px;
+            margin-left: 8px;
+        }
+        #line1{
+            border: 1px solid #d4d4d4;
+            width: 342px;
             height: 0.5px;
             margin-top: 9px;
             margin-left: 8px;
         }
         #fill{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $list-font-bold;
             font-weight: bold;
             font-size: 15px;
             color: rgb(0, 0, 0);

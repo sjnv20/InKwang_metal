@@ -15,6 +15,7 @@ footer{
     color: rgb(184, 184, 184);
     position: fixed;
     bottom: 0;
+    z-index: 10;
     .f_logo{
         display: flex;
         gap: 76%;

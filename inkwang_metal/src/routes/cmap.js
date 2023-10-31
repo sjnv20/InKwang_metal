@@ -105,14 +105,14 @@ const CMap = () => {
                             <div style={{marginTop:"60px"}}>
                                 <div style={{display:"flex"}}>
                                     <p>
-                                        <span className="ti-comments title"><sapn id='title'> Contact&nbsp;&nbsp;</sapn></span>
+                                        <span className="ti-comments title" style={{gap:"8px"}}><sapn id='title'> Contact</sapn></span>
                                     </p>
-                                    <div id='line'></div>
+                                    <div id='line1'></div>
                                 </div>
-                                <div style={{paddingLeft:"25px", marginTop:"30px"}} >
+                                <div style={{paddingLeft:"30px", marginTop:"30px"}} >
                                     <p>
-                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/><br/>
-                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/><br/>
+                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/><br/>
+                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/><br/>
                                         <span id='fill'>E-mail. &nbsp;&nbsp;cc707200@hanmail.net</span>
                                     </p>
                                 </div>
@@ -121,6 +121,12 @@ const CMap = () => {
                     </div>
                 </div>
             </div>
+            <div className="f">
+                <p> <b>대표명</b> &nbsp;: &nbsp;이순수 & 최지연 &nbsp;&nbsp;|&nbsp;&nbsp;<b>사업자번호</b>&nbsp;: &nbsp;606-32-69680</p>
+                <p> <b>Fax</b> &nbsp;: &nbsp;324 . 5053 &nbsp;&nbsp;|&nbsp;&nbsp;<b>E-mail</b> &nbsp;: &nbsp;cc707200@hanmail.net</p>
+                <p> (46910) 부산광역시 사상구 낙동대로1338번길 68 </p>
+            </div>
+            <p id="copyright">copyright © inkwangmetal. & sjnv20. All Rights Reserved.</p>
         </div>
     );
   };
