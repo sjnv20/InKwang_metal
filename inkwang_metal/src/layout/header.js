@@ -26,7 +26,6 @@ const Header = () => {
   });
 
   // if (window.location.pathname === '/') return null;
-  if (window.location.pathname === '/product') return null;
 
   return (
     <header className={ScrollActive ? "navigation nav-bg" : "navigation nav-bg"}>

@@ -64,10 +64,6 @@ const CMap = () => {
 
     return (
         <div className="content">
-            {/* <div className="c_title_back">
-                <div className="c_img"><img src={C_img} alt="c_img1"/></div>
-                <div className="c_text"><p class="c_title">About Us<br/><p id="c_p">- 오시는 길 -</p></p></div>
-            </div> */}
             <div className='side_map'>
                 <div className={ScrollActive ? "Side" : "Side"}>
                     {menus.map((menu, index) => {
@@ -102,7 +98,7 @@ const CMap = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div style={{marginTop:"45px"}}>
+                            <div style={{marginTop:"45px", width:"480px"}}>
                                 <div style={{display:"flex"}}>
                                     <p>
                                         <span className="ti-comments title" style={{gap:"8px"}}><sapn id='title'> Contact</sapn></span>
@@ -121,12 +117,6 @@ const CMap = () => {
                     </div>
                 </div>
             </div>
-            <div className="f">
-                <p> <b>대표명</b> &nbsp;: &nbsp;이순수 & 최지연 &nbsp;&nbsp;|&nbsp;&nbsp;<b>사업자번호</b>&nbsp;: &nbsp;606-32-69680</p>
-                <p> <b>Fax</b> &nbsp;: &nbsp;324 . 5053 &nbsp;&nbsp;|&nbsp;&nbsp;<b>E-mail</b> &nbsp;: &nbsp;cc707200@hanmail.net</p>
-                <p> (46910) 부산광역시 사상구 낙동대로1338번길 68 </p>
-            </div>
-            <p id="copyright">copyright © inkwangmetal. & sjnv20. All Rights Reserved.</p>
         </div>
     );
   };

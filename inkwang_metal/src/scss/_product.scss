@@ -29,6 +29,19 @@
     }
 }
 
+.side_come{
+    display: flex;
+    height: 680px;
+    width: 100%;
+    .product{
+        margin-top: 100px;
+        height: 400px;
+    }
+    .Side{
+        margin-top: 150px;
+    }
+}
+
 .box{
    margin: 0 auto;
    width: 800px;

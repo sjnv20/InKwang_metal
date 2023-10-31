@@ -17,7 +17,7 @@ const Home = () => {
   
   swiperCore.use([Autoplay, Pagination, EffectFade ]);
   return (
-  <div className='content'>
+  <div className='content_h'>
       <Swiper
         className='swiper-container'
         effect={'fade'}
