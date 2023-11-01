@@ -123,7 +123,7 @@ const Product = () => {
               </AppBar>
                 <TabPanel value={value} index={0} dir={theme.direction}>
                   <div className='pr_fill'>
-                    <img className="pr_img" src={R_product} alt='/'/>
+                    <img className="pr_img_r" src={R_product} alt='/'/>
                     <pre>
                       | 특징 : <br/>
                       | 표준조건 : <br/>

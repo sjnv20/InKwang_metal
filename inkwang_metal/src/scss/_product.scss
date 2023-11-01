@@ -20,14 +20,21 @@
    margin-left: 65px;
    
    .pr_img{
-       width: 390px;
-       height: 400px;
+       width: 500px;
+       height: 260px;
+       margin: 0 170px ;
    }
+
+   .pr_img_r{
+    width: 700px;
+    height: 260px;
+    margin: 0 70px ;
+}
 
    .pr_fill{
         display: flex;
+        flex-flow:column wrap;
         gap: 40px;
-
         pre{
             font-family: $list-font-bold;
             font-size: 18px;
