@@ -107,9 +107,9 @@ const CMap = () => {
                                 </div>
                                 <div style={{paddingLeft:"30px", marginTop:"25px", lineHeight:"2.3rem"}} >
                                     <p>
-                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5051</span><br/>
-                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 051) 324 . 5053</span><br/>
-                                        <span id='fill'>E-mail. &nbsp;&nbsp;cc707200@hanmail.net</span>
+                                        <span id='fill'>Tel. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;051) 324 . 5051</span><br/>
+                                        <span id='fill'>Fax. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;051) 324 . 5053</span><br/>
+                                        <span id='fill'>E-mail. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc707200@hanmail.net</span>
                                     </p>
                                 </div>
                             </div>
