@@ -120,7 +120,7 @@ const Product = () => {
                   aria-label="full width tabs example"
                   sx={{ borderBottom: 1, borderColor: '#d4d4d4'}}
                 >
-                  <Tab id="p_tab1" sx={{backgroundColor:"#15137C", fontSize:"18px", fontFamily:"NanumSquareBold", width:'20%', borderStartEndRadius:'80px 80px;', opacity:'1', zIndex:"20"}} label="알카리 착색" {...a11yProps(0)} />
+                  <Tab id="p_tab1" sx={{backgroundColor:"#15137C", fontSize:"18px", fontFamily:"NanumSquareBold", width:'20%', borderStartEndRadius:'80px 80px;', opacity:'1', zIndex:"20"}} label="인산염 피막" {...a11yProps(0)} />
                   <Tab id="p_tab2" sx={{backgroundColor:"#7e7ccf", fontSize:"18px", fontFamily:"NanumSquareBold", width:'20%', borderStartEndRadius:'80px 80px;', left:'-5%', zIndex:"10"}} label="상세 제품" {...a11yProps(1)} />
                 </Tabs>
               </AppBar>
