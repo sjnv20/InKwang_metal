@@ -3,11 +3,11 @@
 
 .side_come{
     display: flex;
-    height: 680px;
+    height: 770px;
     width: 100%;
     .product{
         margin-top: 150px;
-        height: 400px;
+        height: 770px;
     }
     .Side{
         margin-top: 150px;
@@ -18,6 +18,7 @@
    width: 890px;
    height: 890px;
    margin-left: 65px;
+
    
    .pr_img{
        width: 500px;
@@ -35,9 +36,17 @@
         display: flex;
         flex-flow:column wrap;
         gap: 40px;
+        width: 550px;
         pre{
-            font-family: $list-font-bold;
-            font-size: 18px;
+            font-family: $list-font;
+            font-size: 17px;
+            line-height: 2.5rem;
+            #pr_div{
+                margin-left: 60px;
+                line-height: 2rem;
+                margin-top: -34px;
+            }
+
         }
         
    }
@@ -45,12 +54,9 @@
    .pr_fill2{
         display: flex;
         gap: 15px;
-        width: 800px;
-        flex-flow:column wrap;
-        align-content: space-around; 
+        // flex-flow:column wrap;
         flex-wrap:wrap;
-        height: 400px;
-        margin-left: 15px;
+        height: 500px;
         .pm_1{
             width: 350px;
             height: 195px;
@@ -69,12 +75,16 @@
         }
 
         .rc_1{
-            width: 350px;
-            height: 400px;
+            width: 253px;
+            height: 250px;
         }
         .rc_2{
-            width: 350px;
-            height: 400px;
+            width: 253px;
+            height: 250px;
+        }
+        .rc_3{
+            width: 275x;
+            height: 285px;
         }
    }
 }
