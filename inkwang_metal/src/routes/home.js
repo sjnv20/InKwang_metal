@@ -50,7 +50,6 @@ const Home = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-       
     </div>
   );
 };
