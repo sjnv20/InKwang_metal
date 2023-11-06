@@ -8,10 +8,10 @@ const Gallery = () => {
   return (
     <div className='content'>
       <div className='contact'>
-        <h4>Contact</h4>
-        <form>
-
-        </form>
+        <div>
+          <h3>공장 전경</h3>
+          <h3>제품 사진</h3>
+        </div>
       </div>
     </div>
 
