@@ -53,36 +53,36 @@
    .pr_fill2{
         display: flex;
         gap: 15px;
-        flex-wrap:wrap;
+        flex-wrap:column wrap;
         height: 500px;
         .pm_1{
-            width: 350px;
+            width: 210px;
             height: 195px;
         }
         .pm_2{
-            width: 230px;
+            width: 210px;
             height: 400px;
         }
         .pm_3{
-            width: 250px;
+            width: 210px;
             height: 190px;
         }
         .pm_4{
-            width: 230px;
+            width: 210px;
             height: 400px;
         }
 
         .rc_1{
-            width: 253px;
-            height: 250px;
+            width: 210px;
+            height: 190px;
         }
         .rc_2{
-            width: 253px;
-            height: 250px;
+            width: 210px;
+            height: 190px;
         }
         .rc_3{
-            width: 275x;
-            height: 285px;
+            width: 210px;
+            height: 190px;
         }
    }
 }
