@@ -5,7 +5,7 @@ import '../scss/_copyright.scss'
 
 const Copy = () => {
   if (window.location.pathname === '/') return null;
-  if (window.location.pathname === '/gallery') return null;
+  // if (window.location.pathname === '/gallery') return null;
   return (
     <div>
       <div className="f">
