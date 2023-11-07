@@ -13,7 +13,6 @@ import rc_2 from '../images/rc2.jpeg'
 import rc_3 from '../images/rc3.jpeg'
 import inKwang from '../images/inkwang_img/inkwang_door.jpeg';
 import ik from '../images/inkwang_img/inkwang_img07.jpeg'
-import ik1 from '../images/inkwang_img/inkwang_img06.jpeg'
 import ik2 from '../images/inkwang_img/inkwang_img02.jpeg'
 import ik3 from '../images/inkwang_img/inkwang_img03.jpeg'
 import ik4 from '../images/inkwang_img/inkwang_5.jpeg'
@@ -59,26 +58,23 @@ const Gallery = () => {
                 data-caption="인광금속 전경">
                 <img src={inKwang} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik5} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik5} data-caption="완제품선별대" href='!#'>
                 <img src={ik5} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik6} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik6} data-caption="피막투입구" href='!#'>
                 <img src={ik6} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik2} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik2} data-caption="피막 자동화라인" href='!#'>
                 <img src={ik2} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik} data-caption="착색 수동라인" href='!#'>
                 <img src={ik} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik3} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik3} data-caption="피막/착색 라인" href='!#'>
                 <img src={ik3} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik4} data-caption="인광금속 내부" href='!#'>
+              <a data-fancybox="gallery" data-src={ik4} data-caption="현장 입구" href='!#'>
                 <img src={ik4} width="245" height="220" alt="#" />
-              </a>
-              <a data-fancybox="gallery" data-src={ik1} data-caption="인광금속 내부" href='!#'>
-                <img src={ik1} width="245" height="220" alt="#" />
               </a>
               
           </div>

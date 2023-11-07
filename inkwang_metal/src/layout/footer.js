@@ -5,7 +5,6 @@ import Logo_f from '../images/ik_logo_f.png'
 
 const Footer = () => {
   if (window.location.pathname === '/') return null;
-  // if (window.location.pathname === '/gallery') return null;
   return (
     <footer>
       <div className="f_logo">
