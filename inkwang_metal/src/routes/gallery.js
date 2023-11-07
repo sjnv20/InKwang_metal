@@ -58,10 +58,10 @@ const Gallery = () => {
                 data-caption="인광금속 전경">
                 <img src={inKwang} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik5} data-caption="완제품선별대" href='!#'>
+              <a data-fancybox="gallery" data-src={ik5} data-caption="완제품 선별대" href='!#'>
                 <img src={ik5} width="245" height="220" alt="#" />
               </a>
-              <a data-fancybox="gallery" data-src={ik6} data-caption="피막투입구" href='!#'>
+              <a data-fancybox="gallery" data-src={ik6} data-caption="피막 투입구" href='!#'>
                 <img src={ik6} width="245" height="220" alt="#" />
               </a>
               <a data-fancybox="gallery" data-src={ik2} data-caption="피막 자동화라인" href='!#'>
