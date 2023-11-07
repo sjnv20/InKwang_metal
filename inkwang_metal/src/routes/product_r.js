@@ -7,7 +7,7 @@ import R_product from '../images/inkwang_img/r_product.jpeg'
 import rc_1 from '../images/rc1.jpeg'
 import rc_2 from '../images/rc2.jpeg'
 import rc_3 from '../images/rc3.jpeg'
-import Back from '../images/back5.jpg'
+import Back from '../images/back11.jpg'
 
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';

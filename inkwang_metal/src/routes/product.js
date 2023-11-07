@@ -8,7 +8,7 @@ import pm_1 from '../images/pm1.jpeg'
 import pm_2 from '../images/pm2.jpeg'
 import pm_3 from '../images/pm3.jpeg'
 import pm_4 from '../images/pm4.jpeg'
-import Back from '../images/back5.jpg'
+import Back from '../images/back11.jpg'
 
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';

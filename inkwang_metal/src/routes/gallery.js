@@ -3,7 +3,7 @@ import '../scss/_header.scss'
 import '../scss/_footer.scss'
 import '../scss/_gallery.scss'
 
-import Back from '../images/back.jpg'
+import Back from '../images/back5.jpg'
 import pm_1 from '../images/pm1.jpeg'
 import pm_2 from '../images/pm2.jpeg'
 import pm_3 from '../images/pm3.jpeg'
