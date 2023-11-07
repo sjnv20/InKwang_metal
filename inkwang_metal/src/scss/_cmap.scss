@@ -32,7 +32,6 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
     #maps {
         width: 460px;
         height: 400px; 
-        // margin-left: 13px;
         margin-top: 50px;
         @media #{$desktop} {
             width: 700px;

@@ -7,6 +7,7 @@ import R_product from '../images/inkwang_img/r_product.jpeg'
 import rc_1 from '../images/rc1.jpeg'
 import rc_2 from '../images/rc2.jpeg'
 import rc_3 from '../images/rc3.jpeg'
+import Back from '../images/back5.jpg'
 
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
@@ -93,6 +94,10 @@ const Product = () => {
 
   return (
     <div className='content'>
+      <div className='back_img'>
+        <img src={Back} alt='#'/>
+        <h3>Product</h3>
+      </div>
       <div className='side_come'>
         <div className={ScrollActive ? "Side" : "Side"}>
           {menus.map((menu, index) => {

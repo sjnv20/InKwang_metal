@@ -8,6 +8,7 @@ import pm_1 from '../images/pm1.jpeg'
 import pm_2 from '../images/pm2.jpeg'
 import pm_3 from '../images/pm3.jpeg'
 import pm_4 from '../images/pm4.jpeg'
+import Back from '../images/back5.jpg'
 
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
@@ -94,6 +95,10 @@ const Product = () => {
 
   return (
     <div className='content'>
+      <div className='back_img'>
+        <img src={Back} alt='#'/>
+        <h3>Product</h3>
+      </div>
       <div className='side_come'>
         <div className={ScrollActive ? "Side" : "Side"}>
           {menus.map((menu, index) => {
