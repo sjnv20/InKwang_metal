@@ -20,29 +20,8 @@ import Box from '@mui/material/Box';
 
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
-import { useState, useEffect } from "react";
 
 const Product = () => {
-  const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
-  const [ScrollActive, setScrollActive] = useState(false);
-  function handleScroll() {
-    if (ScrollY > 40) {
-      setScrollY(window.pageYOffset);
-      setScrollActive(true);
-    } else {
-      setScrollY(window.pageYOffset);
-      setScrollActive(false);
-    }
-  }
-  useEffect(() => {
-    function scrollListener() {
-      window.addEventListener("scroll", handleScroll);
-    } //  window 에서 스크롤을 감시 시작
-    scrollListener(); // window 에서 스크롤을 감시
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    }; //  window 에서 스크롤을 감시를 종료
-  });
 
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -100,7 +79,7 @@ const Product = () => {
         <h3>Product</h3>
       </div>
       <div className='side_come'>
-        <div className={ScrollActive ? "Side" : "Side"}>
+        <div className= "Side">
           {menus.map((menu, index) => {
               return(
                   <NavLink to={menu.path} key={index}>
