@@ -18,27 +18,24 @@ footer{
     z-index: 10;
 
     .f_logo{
-        display: flex;
-        gap: 76%;
+        position: absolute;
         color: rgb(219, 219, 219);
-
         .f_img{
             width:120px;
             height: 38px;
-            margin: 13px 0 0 55px;
+            margin: 13px 0 0 45%;
         }
         
-        div{
-            display: flex;
-            gap: 8px;
-            
-            #tel{
-                margin-top: 20px;
-                text-align: right;
-                font-size: 20px;
-                font-family: 'GmarketSansMedium ';
-                font-weight: 900;
-            }
+    }
+
+    div{
+        #tel{
+            margin-top: 20px;
+            text-align: right;
+            margin-right: 4%;
+            font-size: 20px;
+            font-family: 'GmarketSansMedium ';
+            font-weight: 900;
         }
     }
 }

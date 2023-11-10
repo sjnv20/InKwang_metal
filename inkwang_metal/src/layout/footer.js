@@ -9,9 +9,9 @@ const Footer = () => {
     <footer>
       <div className="f_logo">
        <a href='/'><img className="f_img" src={Logo_f} alt='logo_f'/></a>
-       <div>
-          <p id="tel">051.324.5051</p>
-        </div>
+      </div>
+      <div>
+        <p id="tel">051.324.5051</p>
       </div>
     </footer>
   );

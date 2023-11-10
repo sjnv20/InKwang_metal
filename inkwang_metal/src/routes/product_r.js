@@ -133,7 +133,7 @@ const Product = () => {
                     <img className="pr_img_r" src={R_product} alt='/'/>
                     <pre>
                       - 목적 :  금속 제품을 화학 약품 탱크에 일정 시간 동안 담그어 표면 처리하여 부식을 방지하는<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;과정<br/>
-                      - 특징 : <div id='pr_div'>• 유광<br/>• 흑색  -  소재의 특성에 따라 색이 차이는 있음<br/>• 두께 변화 없음  -  정밀가공품에 사용<br/>• 내식성이 약하다</div>
+                      - 특징 : <div id='pr_div'>• 유광<br/>• 흑색  -  소재의 특성에 따라 색의 차이는 있음<br/>• 두께 변화 없음  -  정밀가공품에 사용<br/>• 내식성이 약하다</div>
                       - 용도 :  자동차부품 / 산업기계 / 정밀가공품 등
                     </pre>
                   </div>
