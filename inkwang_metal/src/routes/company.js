@@ -8,29 +8,8 @@ import Logo from '../images/logo_f.png'
 import inKwang from '../images/inkwang_img/inkwang_door.jpeg';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarItem from '../SidebarItem';
-import { useState, useEffect } from "react";
 
 const Company = () => {
-  const [ScrollY, setScrollY] = useState(0);
-  const [ScrollActive, setScrollActive] = useState(false);
-  function handleScroll() {
-    if (ScrollY > 40) {
-      setScrollY(window.pageYOffset);
-      setScrollActive(true);
-    } else {
-      setScrollY(window.pageYOffset);
-      setScrollActive(false);
-    }
-  }
-  useEffect(() => {
-    function scrollListener() {
-      window.addEventListener("scroll", handleScroll);
-    }
-    scrollListener(); 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
     
     
     const pathName = useLocation().pathname;
@@ -45,7 +24,7 @@ const Company = () => {
     return (
         <div className="content">
             <div className='side_com'>
-                <div className={ScrollActive ? "Side" : "Side"}>
+                <div className="Side">
                     {menus.map((menu, index) => {
                         return(
                             <NavLink to={menu.path} key={index}>

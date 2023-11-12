@@ -12,33 +12,26 @@ import { useEffect } from "react";
 const { kakao } = window;
 
 const CMap = () => {
-
     useEffect(() => {
         const container = document.getElementById('maps');
         const options = {
         center: new kakao.maps.LatLng(35.178773, 128.9797885),
         level: 1
         };
-
         const map = new kakao.maps.Map(container, options);
-
         const markerPosition = new kakao.maps.LatLng(35.178773, 128.979788); 
-
         const marker = new kakao.maps.Marker({
             position: markerPosition
         });
-
         marker.setMap(map);
         }, [])
         
     const pathName = useLocation().pathname;
-
     const menus = [
         { name: "회사소개", path: "/company" },
         { name: "인사말", path: "/company" },
         { name: "오시는 길", path: "/cmap" },
     ];
-
     return (
         <div className="content">
             <div className='side_map'>
