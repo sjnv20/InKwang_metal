@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
 $desktop: "(min-width: 992px) and (max-width: 1215px)";
-
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareEB.woff2') format('woff2'), 
+        url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareEB.woff')format('woff');
+}
 .content{
     flex: 1;
     overflow: hidden;
@@ -16,6 +20,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             height: 350px;
         }
         h3{
+            font-family: 'NanumSquareEB';
             margin: -200px auto;
             color: white;
             text-align: center;
@@ -29,7 +34,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         .title{
             color: #15137C;
             margin-left: 155px;
-            font-family: $logo-font;
+            font-family: 'NanumSquareEB';
             margin-bottom: 30px;
             font-size: 20px;
             margin-top: 30px;
@@ -47,7 +52,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             h3{
                 margin-left: 5px;
                 margin-top: 5px;
-                font-family: $logo-font;
+                font-family: 'NanumSquareR';
             }
             .fac{
                 margin: 10px 160px;
@@ -80,7 +85,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
             h3{
                 margin-left: 5px;
                 margin-top: 5px;
-                font-family: $logo-font;
+                font-family: 'NanumSquareR';
             }
             .prod{
                 margin: 10px 160px;

@@ -2,10 +2,9 @@
 @import '../scss/_variables.scss';
 $desktop: "(min-width: 992px) and (max-width: 1215px)";
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GmarketSansBold';
+    src: url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff2') format('woff2'),
+        url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff') format('woff');
 }
 
 footer{
@@ -35,8 +34,8 @@ footer{
             text-align: right;
             margin-right: 4%;
             font-size: 20px;
-            font-family: 'GmarketSansMedium ';
-            font-weight: 900;
+            font-family: 'GmarketSansBold';
+            font-weight: 500;
         }
     }
 }

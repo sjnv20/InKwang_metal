@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
 @import '../scss/_variables.scss';
+@font-face {
+    font-family: 'NanumSquareR';
+    src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), 
+        url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
+}
 
 .side_come{
     display: flex;
@@ -36,11 +41,11 @@
         gap: 20px;
         width: 550px;
         pre{
-            font-family: $list-font;
+            font-family: "NanumSquareR";
             font-size: 17px;
             line-height: 2.5rem;
             #pr_div{
-                margin-left: 60px;
+                margin-left: 45px;
                 line-height: 2rem;
                 margin-top: -34px;
             }

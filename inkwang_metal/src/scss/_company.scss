@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
 $desktop: "(min-width: 992px) and (max-width: 1215px)";
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareB.woff2') format('woff2'),
+        url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareB.woff') format('woff');
+}
+@font-face {
+    font-family: 'NanumSquareR';
+    src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), 
+        url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
+}
 
 .content{
     flex: 1;
@@ -58,16 +68,22 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                     width: 430px;
                     height: 400px;
                 }
+                
+                pre{
+                    font-family: 'NanumSquareR';
 
+                    b{
+                        font-family: 'NanumSquareB';
+                    }
+                }
 
                 #sign{
-                    font-family: $list-font-bold;
+                    font-family: 'NanumSquareB';
                     top: 115%;
                     left: 65%;
                     position: absolute;
                     font-size: 20px;
                     margin-top: 10px;
-                    font-weight: 700;
 
                     span{
                         color: #7b7b7b;

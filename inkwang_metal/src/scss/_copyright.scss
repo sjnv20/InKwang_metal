@@ -1,12 +1,12 @@
 @import '../scss/_variables.scss';
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'NanumSquareR';
+    src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), 
+        url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
 }
 
 .f{
+    font-family: 'NanumSquareR';
     width: 100%;
     height: 200px;
     background-color: #fafafa;
