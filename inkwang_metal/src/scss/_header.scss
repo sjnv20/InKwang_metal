@@ -23,26 +23,24 @@ header{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0.5px 4px rgba(191,191,191,48%);
     height: 85px;
-    @media ($mobile) {
-        // height: 320px;;
-    }
     
     .logo{
         height: 100px;
         padding-top: 15px;
         padding-left: 10px;
-    
+
         img{
             margin-left: 140px;
             width: 160px;
             height: 55px;
             cursor: pointer;
-            @media ($mobile) {
-                margin-left: 8%;
-            }
         }
     }
-    
+
+    .menu-icon{
+        display: none;
+    }
+
     .nav{
         font-family: $list-font-bold;
         display: flex;
@@ -55,23 +53,17 @@ header{
         text-align: center;
         transition: .1s ease;
         padding-bottom: 60px;
+
         @media ($mobile) {
-            flex-direction: column;
-            width: 100%;
-            margin: 170px 10%;
-            gap: 10px;
-            display: none;
+           
         }
         
         &.nav-pd{
             a{
-                color: black;
+                color: rgb(0, 0, 0);
                 @media ($mobile) {
                     height: 45px;
                 }
-            }
-            ul{
-                visibility: hidden;
             }
         }
     
@@ -84,9 +76,9 @@ header{
         }
         
         .sublink{
-           margin-top: 10px;
-           display:none;
-           text-align: center;
+        margin-top: 10px;
+        display:none;
+        text-align: center;
         }
         
         .linkwrap:hover .sublink{
@@ -129,17 +121,6 @@ header{
             display: inline-block;
             width: 150px;
         }
-
-        .navbar_toggleBtn{
-            position: absolute;
-            left: 90%;
-            display: none;
-            @media ($mobile) {
-                left: 40%;
-                margin-top: -60px;
-                display: block;
-            }
-        }
     
         a:hover{
             color: $back-color;
@@ -156,7 +137,7 @@ header{
             transform: translateX(10px);
             -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
-          }
+        }
     
         a:nth-child(1):hover ~ .dot {
             -webkit-transform: translateX(-523px);
@@ -189,9 +170,49 @@ header{
             transition: all 0.2s ease-in-out;
             opacity: 1;
         }
+    }
+
+    @media ($mobile) {
+        .logo img{
+            margin-left: 8%;
+        }
+
+        .menu-icon{
+            position: absolute;
+            font-size: 29px;
+            color: #15137C;
+            top: 25px;
+            right: 10px;
+            margin: 10px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .divback{
+            position: absolute;
+            width: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in;
+        }
+
+        .divback.active {
+            top: 85px;
+            width: 50%;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            right: 0;
+
+            .nav{
+                flex-direction: column;
+                width: 100%;
+                margin: 120px 0;
+                gap: 10px;
+            }
+        }
+
+
+    }
+
 }
 
-
-
-
-}

@@ -129,7 +129,7 @@ $mobile : "(max-width: 575px)";
                     height: 430px;
                     margin-left: 50px;
                     @media ($mobile) {
-                        margin-top: 10%;
+                        margin: 10% 0;
                     }
                 }
             }
