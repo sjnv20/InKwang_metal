@@ -33,7 +33,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         margin-bottom: 50px;
         .title{
             color: #15137C;
-            margin-left: 155px;
+            margin-left: 11%;
             font-family: 'NanumSquareEB';
             margin-bottom: 30px;
             font-size: 20px;
@@ -41,8 +41,9 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         }
 
         .factory{
+            margin: 0 11%;
             #logo_title{
-                margin-left: 190px;
+                margin-left: 30px;
                 display: flex;
                 #logo_s{
                     height: 25px;
@@ -55,7 +56,8 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                 font-family: 'NanumSquareR';
             }
             .fac{
-                margin: 10px 160px;
+                margin-top: 10px;
+                // margin: 10px 160px;
                 border-top: 2px solid #d4d4d4;
                 padding: 10px 30px;
                 a{
@@ -72,9 +74,9 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
         .product_1,
         .product_2{
-            margin-top: 15px;
+            margin: 20px 11%;
             #logo_title{
-                margin-left: 190px;
+                margin-left: 30px;
                 display: flex;
                 #logo_s{
                     height: 25px;
@@ -88,8 +90,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                 font-family: 'NanumSquareR';
             }
             .prod{
-                margin: 10px 160px;
-                // border-bottom: 1px solid #d4d4d4;
+                margin-top: 10px;
                 border-top: 2px solid #d4d4d4;
                 padding: 10px 30px;
                 a{
