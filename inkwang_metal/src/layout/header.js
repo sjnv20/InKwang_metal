@@ -2,9 +2,10 @@ import React from 'react';
 import Logo from '../images/ik_logo.png';
 
 const Header = () => {
+
   return (
-    <header className="navigation nav-bg">
-        <div className= "logo logo-pd">
+    <header className="navigation">
+        <div className= "logo">
           <a href='/'><img src={Logo} alt="/"/></a>
         </div>
         <nav className="nav nav-pd">
@@ -28,6 +29,9 @@ const Header = () => {
             </div>
           </a>
           <a href="/gallery">Gallery</a>
+          <a href="/#" class="navbar_toggleBtn">
+            <i class="ti-align-justify"></i>
+          </a>
           <div className="dot"></div>
         </nav>
     </header>

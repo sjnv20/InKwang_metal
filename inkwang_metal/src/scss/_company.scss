@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
 @import '../scss/_variables.scss';
-$desktop: "(min-width: 992px) and (max-width: 1215px)";
 @font-face {
     font-family: 'NanumSquareB';
     src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareB.woff2') format('woff2'),
@@ -12,6 +11,9 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
 }
 
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
+$mobile : "(max-width: 575px)";
+
 .content{
     flex: 1;
     overflow: hidden;
@@ -20,17 +22,24 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
 .side_com{
     display: flex;
-    height: 680px;
+    // height: 680px;
     width: 100%;
     margin: 0 150px;
-
+    @media ($mobile) {
+        overflow: hidden;
+        margin: 0 0;
+    }
     .company{
-        height: 500px;
+        // height: 500px;
         display: flex;
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 60px;
         width: 80%;
+        @media ($mobile) {
+            overflow: hidden;
+            margin: 100px 10%;
+        }
 
         #con1{
             display: flex;
@@ -54,21 +63,23 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
         }
         .con_img{
             display: flex;
+            @media ($mobile) {
+                display: flex;
+                flex-direction: column;
+            }
             #con2{
                 position: relative;
-                height: 300px;
                 margin-top: 20px;
                 font-size: 16px;
                 width: 480px;
                 line-height: 2.5rem;
                 text-align: left;
-                
-                img{
-                    filter: brightness(112%);
-                    width: 430px;
-                    height: 400px;
+                @media ($mobile) {
+                    width: 100%;
+                    overflow: auto;
+                    height: 100%;
                 }
-                
+
                 pre{
                     font-family: 'NanumSquareR';
 
@@ -77,13 +88,31 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
                     }
                 }
 
+                
+                img{
+                    filter: brightness(112%);
+                    width: 430px;
+                    height: 400px;
+                    margin-left: 50px;
+                    z-index: 1;
+                    @media ($mobile) {
+                        margin: 0 5%;
+                        width: 100%;
+                    }
+                }
+                
+                
                 #sign{
                     font-family: 'NanumSquareB';
-                    top: 115%;
-                    left: 65%;
+                    text-align: right;
+                    width: 100%;
                     position: absolute;
                     font-size: 20px;
-                    margin-top: 10px;
+                    @media ($mobile) {
+                        text-align: right;
+                        left: 0;
+                        width: 100%;
+                    }
 
                     span{
                         color: #7b7b7b;
@@ -93,10 +122,16 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
 
             }
 
-            img{
-                width: 430px;
-                height: 400px;
-                margin-left: 50px;
+            .ikimg{
+                display: absolute;
+                img{
+                    width: 430px;
+                    height: 430px;
+                    margin-left: 50px;
+                    @media ($mobile) {
+                        margin-top: 10%;
+                    }
+                }
             }
         }
     }
