@@ -34,8 +34,8 @@ const Header = () => {
               <div className="linkwrap"> 
                 제품소개
                 <div className="sublink">
-                  <a href='/product' style={{width:"160px", padding:"10px 35px"}}>인산염 피막</a>
-                  <a href='/product_r' style={{width:"160px", padding:"10px 35px"}}>알카리 착색</a>
+                  <a id="sub1" href='/product' style={{width:"160px"}}>인산염 피막</a>
+                  <a id="sub1" href='/product_r' style={{width:"160px"}}>알카리 착색</a>
                 </div>
               </div>
             </a>
