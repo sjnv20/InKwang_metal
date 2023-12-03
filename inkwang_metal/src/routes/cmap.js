@@ -51,7 +51,7 @@ const CMap = () => {
                     <div id="con1">
                         <span className="ti-map-alt"></span><p id="tit">오시는 길</p>
                     </div>
-                    <div style={{display:"flex"}}>
+                    <div id='ad' style={{display:"flex"}}>
                         <div id='maps'></div>
                         <div className='address'> 
                             <div>
@@ -61,14 +61,14 @@ const CMap = () => {
                                     </p>
                                     <div id='line'></div>
                                 </div>
-                                <div style={{paddingLeft:"25px", marginTop:"25px", width:"460px"}} >
+                                <div id='sp'>
                                     <p>
                                         <span id='fill'>부산광역시 사상구 낙동대로1338번길 68 (삼락동, 인광금속)<br/><br/>68, Nakdong-daero 1338beon-gil, Sasang-gu, Busan, Republic of Korea</span>
                                         
                                     </p>
                                 </div>
                             </div>
-                            <div style={{marginTop:"45px", width:"480px"}}>
+                            <div id='contac'>
                                 <div style={{display:"flex"}}>
                                     <p>
                                         <span className="ti-comments title" style={{gap:"8px"}}><sapn id='title'> Contact</sapn></span>

@@ -6,6 +6,7 @@ $desktop: "(min-width: 992px) and (max-width: 1215px)";
     src: url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff2') format('woff2'),
         url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff') format('woff');
 }
+$mobile : "(max-width: 575px)";
 
 footer{
     height: 60px;
@@ -23,6 +24,10 @@ footer{
             width:120px;
             height: 38px;
             margin: 13px 0 0 45%;
+
+            @media ($mobile) {
+                margin: 13px 0 0 8%;
+            }
         }
         
     }
@@ -38,4 +43,7 @@ footer{
             font-weight: 500;
         }
     }
+
+    
 }
+
